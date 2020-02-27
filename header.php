@@ -10,7 +10,7 @@
 
     <title>ProjetWeb</title>
 
-    <!-- Bootstrap core CSS -->
+    <!-- Bootstrap & Tailwind core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://unpkg.com/tailwindcss@%5E1.0/dist/tailwind.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
@@ -22,6 +22,7 @@
     
     <nav class="bg-gray-800 pt-1 md:pt-2 pb-1 px-1 mt-0 h-auto fixed w-full z-20 top-0">
         <div class="flex flex-wrap items-center">
+        <div class="flex flex-1 md:w-1/3 justify-center md:justify-start text-black px-2"></div>
 
             <div class="flex flex-1 md:w-1/3 justify-center md:justify-start text-black px-2">
                 <span class="relative w-full">
@@ -46,13 +47,13 @@
                             </li>
                         <?php else :  ?>
                             <li class="flex-1 md:flex-none md:mr-3">
-                                <a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="/../siteJeux/traitement/connexion.php">
+                                <a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="/../ProjetWeb/connexion/connexion.php">
                                     Connexion
                                 </a>
                             </li>
                         <?php endif ?>
 				    <li class="flex-1 md:flex-none md:mr-3">
-					    <a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="/../siteJeux/traitement/inscription.php"><i class="fas fa-user-plus fa-fw mr-1"></i> Inscription</a>
+					    <a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="/../ProjetWeb/inscription/inscription.php"><i class="fas fa-user-plus fa-fw mr-1"></i> Inscription</a>
 				    </li>
 				    <li class="flex-1 md:flex-none md:mr-3">
 						<div class="relative inline-block">
@@ -80,9 +81,9 @@
             </div>
         </div>
     </nav>
-    <div class="flex flex-col md:flex-row">
+
 <!-- container-fluid -->
-<div class="container-fluid">
+<div class="container">
     <!-- row -->
     <div class="row">
     <div class="main-content flex-1 bg-gray-100 mt-12 md:mt-2 pb-24 md:pb-5">
