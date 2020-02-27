@@ -1,6 +1,6 @@
 <?php include __DIR__ . '/../header.php' ?>
 
-    <main class="main-content flex-1 bg-gray-400 mt-12 md:mt-2 pb-24 md:pb-5">
+    <div class="main-content flex-1 bg-gray-400 mt-12 md:mt-2 pb-24 md:pb-5">
         <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             <h1 class="border-bottom w-100">Connexion</h1>
                 <form action="traitement_connexion.php" method="post" enctype="multipart/form-data" class="col-md-4">
