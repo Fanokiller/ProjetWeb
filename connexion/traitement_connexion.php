@@ -1,4 +1,4 @@
-<?php include __DIR__ . '/../header.php' ?>
+<?php include __DIR__ . './header.php' ?>
 <?php
 session_start();
 try
@@ -13,13 +13,13 @@ catch(Exception $e)
     $id_login->execute(array('user_login' => $_POST['user_name'],'user_password' => $_POST['user_password']));
     $test_login = $id_login->fetch();
     if (!$test_login){
-        header('Location: /../skeleton/traitement/erreur.php');
+        header('Location: ./ProjetWeb/erreur.php');
     }
     else{
         $_SESSION['user_login']=$_POST['user_name'];
         $_SESSION['user_password']=$_POST['user_password'];
 		echo ('vous êtes connecté');
-		header('Location: /../skeleton/index.php');
+		header('Location: ./ProjetWeb/accueil/accueil.php');
     }
 ?>
-<?php include __DIR__ . '/../footer.php' ?>
+<?php include __DIR__ . './footer.php' ?>
