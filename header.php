@@ -36,7 +36,7 @@
             </li>
             <?php else :  ?>
                 <li class="nav-item">
-                <a class="nav-link active" href="/../ProjetWeb/formulaire/traitement/connexion/connexion.php">
+                <a class="nav-link active" href="/../ProjetWeb/connexion/connexion.php">
                     Connexion
                 </a>
             </li>
@@ -49,4 +49,4 @@
 <div class="container-fluid">
     <!-- row -->
     <div class="row">
-        <?php include __DIR__ . '/../ProjetWeb/menu.php' ?>
+        <!-- <?php include __DIR__ . '/../ProjetWeb/menu.php' ?> -->
