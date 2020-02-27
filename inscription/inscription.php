@@ -1,21 +1,20 @@
 <?php include __DIR__ . '/../header.php' ?>
-    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
-        <div>
-            <div>
+<div class="main-content flex-1 bg-gray-400 mt-12 md:mt-2 pb-24 md:pb-5">
+        <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 <h1 class="border-bottom w-100">Inscription</h1>
                 <form action="/../ProjetWeb/inscription/traitement_inscription.php" method="post" enctype="multipart/form-data" class="col-md-4">
-                    <div class="form-group">
+                    <div class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
                         <label for="nickname">Nom</label>
-                        <input class="form-control" id="nickname" name="nickname" type="text">
+                        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="nickname" name="nickname" type="text">
 
                         <label for="user_password">Mot de passe</label>
-                        <input class="form-control" id="user_password" name="user_password" type="password">
+                        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="user_password" name="user_password" type="password">
 
                         <label for="email">Email</label>
-                        <input class="form-control" id="email" name="email" type="mail">
+                        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="email" name="email" type="mail">
                     </div>
-                    <div class="form-group">
-                        <button class="btn btn-block btn-primary" type="submit">Inscription</button>
+                    <div class="flex items-center justify-between my-10 mx-16">
+                        <button class="bg-green-500 hover:bg-green-400 text-white font-bold py-2 px-4 border-b-4 border-green-700 hover:border-green-500 rounded" type="submit">Inscription</button>
                     </div>
                 </form>
             </div>
