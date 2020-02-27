@@ -36,7 +36,7 @@
             <div class="flex w-full pt-2 content-center justify-between md:w-1/3 md:justify-end">
 				<ul class="list-reset flex justify-between flex-1 md:flex-none items-center">
                         <?php
-                            if (isset($_SESSION['user_login'])):
+                            if (isset($_SESSION['nickname'])):
 
                         ?>
                             <li class="flex-1 md:flex-none md:mr-3">
@@ -58,9 +58,9 @@
 						<div class="relative inline-block">
                             <button onclick="toggleDD('myDropdown')" class="drop-button text-white focus:outline-none">
                             <?php
-                            if (isset($_SESSION['user_login'])) // Si le membre est connecté
+                            if (isset($_SESSION['nickname'])) // Si le membre est connecté
                             {
-                            echo 'Bonjour  '.$_SESSION['user_login'].'';
+                            echo 'Bonjour  '.$_SESSION['nickname'].'';
                             }
                             else // si personne n'est connecté
                             {
