@@ -6,10 +6,10 @@
                 <form action="traitement_connexion.php" method="post" enctype="multipart/form-data" class="col-md-4">
                     <div class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
                         <label for="nickname">Nom</label>
-                        <input class="form-control" id="nickname" name="nickname" type="text">
+                        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="nickname" name="nickname" type="text">
 
                         <label for="user_password">Mot de passe</label>
-                        <input class="form-control" id="user_password" name="user_password" type="password">
+                        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="user_password" name="user_password" type="password">
                     </div>
                     <div class="flex items-center justify-between my-10 mx-16">
                         <button class="bg-green-500 hover:bg-green-400 text-white font-bold py-2 px-4 border-b-4 border-green-700 hover:border-green-500 rounded" type="submit">Connexion</button>
