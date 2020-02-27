@@ -23,11 +23,11 @@ if (isset($_POST['Nom_inscription']) && isset($_POST['password']) && isset($_POS
             'email' => $_POST['email']
             ));
             var_dump($req);
-        header('Location: /../skeleton/formulaire/succes.php');
+        header('Location: ./ProjetWeb/succes.php');
     } else {
-        header('Location: /../skeleton/formulaire/erreur.php');
+        header('Location: ./ProjetWeb/erreur.php');
     }
 
 } else {
-    header('Location: /../skeleton/formulaire/erreur.php');
+    header('Location: ./ProjetWeb/erreur.php');
 }
