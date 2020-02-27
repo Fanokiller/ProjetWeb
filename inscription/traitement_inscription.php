@@ -1,6 +1,6 @@
 <?php
-$Nom = $_POST['Nom_inscription'];
-$Password = $_POST['password'];
+// $Nom = $_POST['Nom_inscription'];
+// $Password = $_POST['user_password'];
 
 try
 {
@@ -12,22 +12,22 @@ catch(Exception $e)
 }
 
 
-if (isset($_POST['Nom_inscription']) && isset($_POST['password']) && isset($_POST['email'])) {
+if (isset($_POST['nickname']) && isset($_POST['user_password']) && isset($_POST['email'])) {
 
-    if (strlen($_POST['Nom_inscription']) != 0 && strlen($_POST['password']) != 0 && strlen($_POST['email'])) {
+    if (strlen($_POST['nickname']) != 0 && strlen($_POST['user_password']) != 0 && strlen($_POST['email'])) {
 
-        $req = $bdd->prepare('INSERT INTO user (Nom_inscription,passeword,email) VALUES (:nickname,:password,:email)');
+        $req = $bdd->prepare('INSERT INTO user (nickname,user_password,email) VALUES (:nickname,:user_password,:email)');
         $req->execute(array(
-            'nickname' => $_POST['Nom_inscription'],
-            'password' => $_POST['password'],
+            'nickname' => $_POST['nickname'],
+            'user_password' => $_POST['user_password'],
             'email' => $_POST['email']
             ));
-            var_dump($req);
-        header('Location: ./ProjetWeb/succes.php');
+            echo var_dump($req);
+        header('Location: /ProjetWeb/succes.php');
     } else {
-        header('Location: ./ProjetWeb/erreur.php');
+        header('Location: /ProjetWeb/erreur.php');
     }
 
 } else {
-    header('Location: ./ProjetWeb/erreur.php');
+    header('Location: /ProjetWeb/erreur.php');
 }
