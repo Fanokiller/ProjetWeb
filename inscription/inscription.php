@@ -10,6 +10,9 @@
 
                         <label for="password">Mot de passe</label>
                         <input class="form-control" id="password" name="password" type="password">
+
+                        <label for="email">Email</label>
+                        <input class="form-control" id="email" name="email" type="mail">
                     </div>
                     <div class="form-group">
                         <button class="btn btn-block btn-primary" type="submit">Inscription</button>
