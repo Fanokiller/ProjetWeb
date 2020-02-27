@@ -21,7 +21,7 @@
     
     <nav class="bg-gray-800 pt-1 md:pt-2 pb-1 px-1 mt-0 h-auto fixed w-full z-20 top-0">
         <div class="flex flex-wrap items-center">
-        <div class="flex flex-1 md:w-1/3 justify-center md:justify-start text-black px-2"></div>
+        <div class="flex flex-shrink md:w-1/3 justify-center md:justify-start text-white">
 
             <div class="flex flex-1 md:w-1/3 justify-center md:justify-start text-black px-2">
                 <span class="relative w-full">
