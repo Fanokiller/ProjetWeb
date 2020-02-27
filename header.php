@@ -23,7 +23,7 @@
     <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="/../ProjetWeb/index.php"><i class="fas fa-home fa-fw"></i></a>
     <ul class="nav nav-pills justify-content-end">
         <li class="nav-item">
-            <a class="nav-link active" href="/../ProjetWeb/formulaire/traitement/inscription/inscription.php"><i class="fas fa-user-plus fa-fw"></i>Inscription</a>
+            <a class="nav-link active" href="/../ProjetWeb/inscription/inscription.php"><i class="fas fa-user-plus fa-fw"></i>Inscription</a>
         </li>
         <?php
              if (isset($_SESSION['user_login'])):
