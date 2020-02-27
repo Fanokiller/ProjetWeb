@@ -21,9 +21,9 @@
     
     <nav class="bg-gray-800 pt-1 md:pt-2 pb-1 px-1 mt-0 h-auto fixed w-full z-20 top-0">
         <div class="flex flex-wrap items-center">
-        <div class="flex flex-shrink md:w-1/3 justify-center md:justify-start text-white">
+        <div class="flex flex-shrink md:w-1/3 justify-center md:justify-start text-white"></div>
 
-            <div class="flex flex-1 md:w-1/3 justify-center md:justify-start text-black px-2">
+            <div class="flex flex-1 md:w-1/3 justify-center md:justify-center text-black px-2">
                 <span class="relative w-full">
                     <input type="search" placeholder="Search" class="w-full bg-gray-500 text-sm text-black transition border border-transparent focus:outline-none focus:border-gray-700 rounded py-1 px-2 pl-10 appearance-none leading-normal">
                     <div class="absolute search-icon" style="top: .5rem; left: .8rem;">
@@ -81,9 +81,5 @@
         </div>
     </nav>
 
-<!-- container-fluid -->
-<div class="container">
-    <!-- row -->
-    <div class="row">
-    <div class="main-content flex-1 bg-gray-100 mt-12 md:mt-2 pb-24 md:pb-5">
-        <!-- <?php include __DIR__ . '/../ProjetWeb/menu.php' ?> -->
+    <div class="flex flex-col md:flex-row">
+ <!-- <?php include __DIR__ . '/../ProjetWeb/menu.php' ?> --> 
