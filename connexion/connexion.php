@@ -6,11 +6,11 @@
                 <h1 class="border-bottom w-100">Connexion</h1>
                 <form action="traitement_connexion.php" method="post" enctype="multipart/form-data" class="col-md-4">
                     <div class="form-group">
-                        <label for="Nom_inscription">Nom</label>
-                        <input class="form-control" id="Nom_inscription" name="user_name" type="text">
+                        <label for="nickname">Nom</label>
+                        <input class="form-control" id="nickname" name="nickname" type="text">
 
-                        <label for="password">Mot de passe</label>
-                        <input class="form-control" id="password" name="user_password" type="password">
+                        <label for="user_password">Mot de passe</label>
+                        <input class="form-control" id="user_password" name="user_password" type="password">
                     </div>
                     <div class="form-group">
                         <button class="btn btn-block btn-primary" type="submit">Connexion</button>
