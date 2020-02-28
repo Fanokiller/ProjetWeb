@@ -62,9 +62,9 @@
                             {
                             echo 'Bonjour  '.$_SESSION['nickname'];
                             }
-                            ?><svg class="h-3 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg></button>
-                            <div id="myDropdown" class="dropdownlist absolute bg-black text-white pin-r mt-3 p-3 overflow-auto z-30 invisible">
-                                <a href="#" class="hover:bg-grey-darkest text-white text-sm no-underline hover:no-underline block"><i class="fa fa-user fa-fw mr-1"></i>Profile</a>
+                            ?><svg class="h-3 fill-current inline-block mr-1 -mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg></button>
+                            <div id="myDropdown" class="dropdownlist absolute bg-black text-white overflow-auto z-30 invisible">
+                                <a href="/../ProjetWeb/user/user.php" class="hover:bg-grey-darkest text-white text-sm no-underline hover:no-underline block"><i class="fa fa-user fa-fw mr-1"></i>Profile</a>
                                 <a href="#" class="hover:bg-grey-darkest text-white text-sm no-underline hover:no-underline block"><i class="fa fa-cog fa-fw mr-1"></i>Settings</a>
                             </div>
                         </div>
