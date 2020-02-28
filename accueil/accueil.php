@@ -6,11 +6,13 @@
                     <div class="bg-gray-900 border border-gray-800 rounded shadow p-2">
                         <div class="flex flex-row items-center">
                             <div class="flex-shrink pr-4">
-                                <div class="rounded p-3 bg-green-600"><i class="fa fa-wallet fa-2x fa-fw fa-inverse"></i></div>
+                                <div class=>
+                                <img src=picture\sgec.jpg>
+                                </div>
                             </div>
                             <div class="flex-1 text-right md:text-center">
-                                <h5 class="font-bold uppercase text-gray-400">Total Revenue</h5>
-                                <h3 class="font-bold text-3xl text-gray-600">$3249 <span class="text-green-500"><i class="fas fa-caret-up"></i></span></h3>
+                                <!-- <h5 class="font-bold uppercase text-gray-400">Total Revenue</h5>
+                                <h3 class="font-bold text-3xl text-gray-600">$3249 <span class="text-green-500"><i class="fas fa-caret-up"></i></span></h3> -->
                             </div>
                         </div>
                     </div>
@@ -21,11 +23,13 @@
                     <div class="bg-gray-900 border border-gray-800 rounded shadow p-2">
                         <div class="flex flex-row items-center">
                             <div class="flex-shrink pr-4">
-                                <div class="rounded p-3 bg-orange-600"><i class="fas fa-users fa-2x fa-fw fa-inverse"></i></div>
+                                <div class=>
+                                <img src=picture\sgec.jpg>
+                                </div>
                             </div>
                             <div class="flex-1 text-right md:text-center">
-                                <h5 class="font-bold uppercase text-gray-400">Total Users</h5>
-                                <h3 class="font-bold text-3xl text-gray-600">249 <span class="text-orange-500"><i class="fas fa-exchange-alt"></i></span></h3>
+                                <!-- <h5 class="font-bold uppercase text-gray-400">Total Users</h5>
+                                <h3 class="font-bold text-3xl text-gray-600">249 <span class="text-orange-500"><i class="fas fa-exchange-alt"></i></span></h3> -->
                             </div>
                         </div>
                     </div>
@@ -36,11 +40,13 @@
                     <div class="bg-gray-900 border border-gray-800 rounded shadow p-2">
                         <div class="flex flex-row items-center">
                             <div class="flex-shrink pr-4">
-                                <div class="rounded p-3 bg-yellow-600"><i class="fas fa-user-plus fa-2x fa-fw fa-inverse"></i></div>
+                                <div class=>
+                                <img src=picture\sgec.jpg>
+                                </div>
                             </div>
                             <div class="flex-1 text-right md:text-center">
-                                <h5 class="font-bold uppercase text-gray-400">New Users</h5>
-                                <h3 class="font-bold text-3xl text-gray-600">2 <span class="text-yellow-600"><i class="fas fa-caret-up"></i></span></h3>
+                                <!-- <h5 class="font-bold uppercase text-gray-400">New Users</h5>
+                                <h3 class="font-bold text-3xl text-gray-600">2 <span class="text-yellow-600"><i class="fas fa-caret-up"></i></span></h3> -->
                             </div>
                         </div>
                     </div>
@@ -51,11 +57,13 @@
                     <div class="bg-gray-900 border border-gray-800 rounded shadow p-2">
                         <div class="flex flex-row items-center">
                             <div class="flex-shrink pr-4">
-                                <div class="rounded p-3 bg-blue-600"><i class="fas fa-server fa-2x fa-fw fa-inverse"></i></div>
+                                <div class=>
+                                <img src=picture\sgec.jpg>
+                                </div>
                             </div>
                             <div class="flex-1 text-right md:text-center">
-                                <h5 class="font-bold uppercase text-gray-400">Server Uptime</h5>
-                                <h3 class="font-bold text-3xl text-gray-600">152 days</h3>
+                                <!-- <h5 class="font-bold uppercase text-gray-400">Server Uptime</h5>
+                                <h3 class="font-bold text-3xl text-gray-600">152 days</h3> -->
                             </div>
                         </div>
                     </div>
@@ -66,11 +74,13 @@
                     <div class="bg-gray-900 border border-gray-800 rounded shadow p-2">
                         <div class="flex flex-row items-center">
                             <div class="flex-shrink pr-4">
-                                <div class="rounded p-3 bg-indigo-600"><i class="fas fa-tasks fa-2x fa-fw fa-inverse"></i></div>
+                                <div class=>
+                                <img src=picture\sgec.jpg>
+                                </div>
                             </div>
                             <div class="flex-1 text-right md:text-center">
-                                <h5 class="font-bold uppercase text-gray-400">To Do List</h5>
-                                <h3 class="font-bold text-3xl text-gray-600">7 tasks</h3>
+                                <!-- <h5 class="font-bold uppercase text-gray-400">To Do List</h5>
+                                <h3 class="font-bold text-3xl text-gray-600">7 tasks</h3> -->
                             </div>
                         </div>
                     </div>
@@ -81,11 +91,13 @@
                     <div class="bg-gray-900 border border-gray-800 rounded shadow p-2">
                         <div class="flex flex-row items-center">
                             <div class="flex-shrink pr-4">
-                                <div class="rounded p-3 bg-red-600"><i class="fas fa-inbox fa-2x fa-fw fa-inverse"></i></div>
+                                <div class=>
+                                <img src=picture\sgec.jpg>
+                                </div>
                             </div>
                             <div class="flex-1 text-right md:text-center">
-                                <h5 class="font-bold uppercase text-gray-400">Issues</h5>
-                                <h3 class="font-bold text-3xl text-gray-600">3 <span class="text-red-500"><i class="fas fa-caret-up"></i></span></h3>
+                                <!-- <h5 class="font-bold uppercase text-gray-400">Issues</h5>
+                                <h3 class="font-bold text-3xl text-gray-600">3 <span class="text-red-500"><i class="fas fa-caret-up"></i></span></h3> -->
                             </div>
                         </div>
                     </div>
@@ -96,3 +108,8 @@
 
 </div>
 <?php include __DIR__ . '/../footer.php' ?> <!-- Footer -->
+
+
+
+
+<!-- <div class="rounded p-3 bg-green-600"><i class="fa fa-wallet fa-2x fa-fw fa-inverse"></i></div> -->
