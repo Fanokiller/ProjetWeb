@@ -9,7 +9,7 @@ catch(Exception $e)
 {
     die('Erreur : '.$e->getMessage());
 }
-	$id_login = $bdd->prepare('SELECT user_ id FROM user WHERE nickname = :nickname AND user_password = :user_password');
+	$id_login = $bdd->prepare('SELECT user_id FROM user WHERE nickname = :nickname AND user_password = :user_password');
     $id_login->execute(array('nickname' => $_POST['nickname'],'user_password' => $_POST['user_password']));
     $test_login = $id_login->fetch();
     if (!$test_login){
