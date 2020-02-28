@@ -1,3 +1,5 @@
+<?php include __DIR__ . '/../footer.php' ?>
+
 </div>
 <!-- /row -->
 </div>
