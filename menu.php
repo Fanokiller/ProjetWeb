@@ -37,6 +37,10 @@
                     <i class="far fa-plus-square fa-fw mr-1"></i><span class="pb-1 md:pb-0 text-xs md:text-base text-gray-600 md:text-gray-400 block md:inline-block ml-2">Nouvelle recette</span>
                 </a>
             </li>
+            <!-- <li>
+            <i class="fas fa-print"></i><input type="button" value="Print" 
+                    onclick="window.print()" /> 
+            </li> -->
         </ul>
     </div>
 </div>
