@@ -40,7 +40,7 @@
 
                         ?>
                             <li class="flex-1 md:flex-none md:mr-3">
-                                <a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="/../siteJeux/traitement/deconnexion.php">
+                                <a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="/../ProjetWeb/deconnexion/deconnexion.php">
                                     Deconnexion
                                 </a>
                             </li>
