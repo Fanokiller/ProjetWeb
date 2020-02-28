@@ -55,17 +55,16 @@
 					    <a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="/../ProjetWeb/inscription/inscription.php"><i class="fas fa-user-plus fa-fw mr-1"></i> Inscription</a>
 				    </li>
 				    <li class="flex-1 md:flex-none md:mr-3">
-						<div class="relative inline-block">
-                            <button onclick="toggleDD('myDropdown')" class="drop-button text-white focus:outline-none">
+						<div class="relative inline-block text-white">
+                            
                             <?php
                             if (isset($_SESSION['nickname'])) // Si le membre est connecté
                             {
-                            echo 'Bonjour  '.$_SESSION['nickname'].'';
+                            echo 'Bonjour  '.$_SESSION['nickname'];
                             }
-                            else // si personne n'est connecté
-                            {
-                            }
-                            ?> <i class="fas fa-caret-square-down fa-fw mr-1"></i></button>
+                            ?>
+                            <button onclick="toggleDD('myDropdown')" class="drop-button text-white focus:outline-none">
+                            <i class="fas fa-caret-square-down fa-fw mr-1"></i></button>
                             
                             <div id="myDropdown" class="dropdownlist absolute bg-gray-900 text-white right-0 mt-3 p-3 overflow-auto z-30 invisible">
                                 <input type="text" class="drop-search p-2 text-gray-600" placeholder="Search.." id="myInput" onkeyup="filterDD('myDropdown','myInput')">
