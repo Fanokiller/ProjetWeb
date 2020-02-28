@@ -33,8 +33,8 @@
             </li>
             <?php endif ?>
             <li class="mr-3">
-                <a href="/../siteJeux/formulaire/formulaire.php" class="block py-1 md:py-3 pl-0 md:pl-1 align-middle text-white no-underline hover:text-white border-b-2 border-gray-800 hover:border-red-500">
-                    <i class="far fa-plus-square fa-fw mr-1"></i><span class="pb-1 md:pb-0 text-xs md:text-base text-gray-600 md:text-gray-400 block md:inline-block ml-2">Ajout d'un recette</span>
+                <a href="/../ProjetWeb/ajoutRecette/ajtRecette.php" class="block py-1 md:py-3 pl-0 md:pl-1 align-middle text-white no-underline hover:text-white border-b-2 border-gray-800 hover:border-red-500">
+                    <i class="far fa-plus-square fa-fw mr-1"></i><span class="pb-1 md:pb-0 text-xs md:text-base text-gray-600 md:text-gray-400 block md:inline-block ml-2">Nouvelle recette</span>
                 </a>
             </li>
         </ul>
