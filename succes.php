@@ -1,4 +1,4 @@
-<?php include __DIR__ . './header.php' ?>
+<?php include __DIR__ . '/../ProjetWeb/header.php' ?>
 
         <div class="main-content flex-1 bg-gray-400 mt-12 md:mt-2 pb-24 md:pb-5">
             <h1 class="border-bottom w-100">Formulaire</h1>
@@ -11,4 +11,4 @@
         </div>
 
 
-<?php include __DIR__ . './footer.php' ?>
+<?php include __DIR__ . '/../ProjetWeb/footer.php' ?>
