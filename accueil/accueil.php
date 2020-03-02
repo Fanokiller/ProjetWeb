@@ -1,115 +1,49 @@
-<?php include __DIR__ . '/../header.php' ?>  <!-- Header -->
+<?php include __DIR__ . '/../header.php' ?>  
+
 <div class="main-content flex-1 bg-gray-100 mt-12 md:mt-2 pb-24 md:pb-5">
-    <div class="flex flex-wrap ">
-                <div class="w-full md:w-1/2 xl:w-1/3 p-3">
-                    <!--Metric Card-->
-                    <div class="bg-gray-900 border border-gray-800 rounded shadow p-2">
-                        <div class="flex flex-row items-center">
-                            <div class="flex-shrink pr-4">
-                                <div class=>
-                                <img src=picture\sgec.jpg>
-                                </div>
-                            </div>
-                            <div class="flex-1 text-right md:text-center">
-                                <!-- <h5 class="font-bold uppercase text-gray-400">Total Revenue</h5>
-                                <h3 class="font-bold text-3xl text-gray-600">$3249 <span class="text-green-500"><i class="fas fa-caret-up"></i></span></h3> -->
-                            </div>
-                        </div>
-                    </div>
-                    <!--/Metric Card-->
-                </div>
-                <div class="w-full md:w-1/2 xl:w-1/3 p-3">
-                    <!--Metric Card-->
-                    <div class="bg-gray-900 border border-gray-800 rounded shadow p-2">
-                        <div class="flex flex-row items-center">
-                            <div class="flex-shrink pr-4">
-                                <div class=>
-                                <img src=picture\sgec.jpg>
-                                </div>
-                            </div>
-                            <div class="flex-1 text-right md:text-center">
-                                <!-- <h5 class="font-bold uppercase text-gray-400">Total Users</h5>
-                                <h3 class="font-bold text-3xl text-gray-600">249 <span class="text-orange-500"><i class="fas fa-exchange-alt"></i></span></h3> -->
-                            </div>
-                        </div>
-                    </div>
-                    <!--/Metric Card-->
-                </div>
-                <div class="w-full md:w-1/2 xl:w-1/3 p-3">
-                    <!--Metric Card-->
-                    <div class="bg-gray-900 border border-gray-800 rounded shadow p-2">
-                        <div class="flex flex-row items-center">
-                            <div class="flex-shrink pr-4">
-                                <div class=>
-                                <img src=picture\sgec.jpg>
-                                </div>
-                            </div>
-                            <div class="flex-1 text-right md:text-center">
-                                <!-- <h5 class="font-bold uppercase text-gray-400">New Users</h5>
-                                <h3 class="font-bold text-3xl text-gray-600">2 <span class="text-yellow-600"><i class="fas fa-caret-up"></i></span></h3> -->
-                            </div>
-                        </div>
-                    </div>
-                    <!--/Metric Card-->
-                </div>
-                <div class="w-full md:w-1/2 xl:w-1/3 p-3">
-                    <!--Metric Card-->
-                    <div class="bg-gray-900 border border-gray-800 rounded shadow p-2">
-                        <div class="flex flex-row items-center">
-                            <div class="flex-shrink pr-4">
-                                <div class=>
-                                <img src=picture\sgec.jpg>
-                                </div>
-                            </div>
-                            <div class="flex-1 text-right md:text-center">
-                                <!-- <h5 class="font-bold uppercase text-gray-400">Server Uptime</h5>
-                                <h3 class="font-bold text-3xl text-gray-600">152 days</h3> -->
-                            </div>
-                        </div>
-                    </div>
-                    <!--/Metric Card-->
-                </div>
-                <div class="w-full md:w-1/2 xl:w-1/3 p-3">
-                    <!--Metric Card-->
-                    <div class="bg-gray-900 border border-gray-800 rounded shadow p-2">
-                        <div class="flex flex-row items-center">
-                            <div class="flex-shrink pr-4">
-                                <div class=>
-                                <img src=picture\sgec.jpg>
-                                </div>
-                            </div>
-                            <div class="flex-1 text-right md:text-center">
-                                <!-- <h5 class="font-bold uppercase text-gray-400">To Do List</h5>
-                                <h3 class="font-bold text-3xl text-gray-600">7 tasks</h3> -->
-                            </div>
-                        </div>
-                    </div>
-                    <!--/Metric Card-->
-                </div>
-                <div class="w-full md:w-1/2 xl:w-1/3 p-3">
-                    <!--Metric Card-->
-                    <div class="bg-gray-900 border border-gray-800 rounded shadow p-2">
-                        <div class="flex flex-row items-center">
-                            <div class="flex-shrink pr-4">
-                                <div class=>
-                                <img src=picture\sgec.jpg>
-                                </div>
-                            </div>
-                            <div class="flex-1 text-right md:text-center">
-                                <!-- <h5 class="font-bold uppercase text-gray-400">Issues</h5>
-                                <h3 class="font-bold text-3xl text-gray-600">3 <span class="text-red-500"><i class="fas fa-caret-up"></i></span></h3> -->
-                            </div>
-                        </div>
-                    </div>
-                    <!--/Metric Card-->
-                </div>
-            </div>
+<!-- 
+<div class=" text-center md:py-2 md:max-w-6xl md:mx-auto md:px-5 ">  -->
+                
+    <table class="w-2 md:w-full h-2 bg-white text-right border-4 border-gray-800  ">       
+        <thead>
+            <tr>
+                <th class="px-4 py-2 bg-gray-800 text-blue-200 w-1/3"></th>
+                <th class="px-4 py-2 bg-gray-800 text-blue-200 w-2/3"></th>
+            </tr>
+        </thead>
 
-
+        <tbody>
+            <tr class="border-4 border-gray-800">
+                <td class="flex-none px-4 py-2 w-1/3" > 
+                    <img class=" inline w-full mr-4  flex-none" src="picture\sgec.jpg ">
+                </td>
+                <td class=" px-4 py-2 flex-none text-gray-800 w-2/3">
+                    <p>teconsectetur aeos itaque, soluta voluptate quod illo ipsam.lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe cupiditate maxime, eaque tenetur inventore quo fugit illo assumenda, amet adipisci laborum corporis, architecto nostrum minima reiciendis porro! Accusantium, id quae? lore </p>
+                </td>
+            </tr>
+        </tbody>
+    </table>        
+    <table class="w-2 md:w-full h-2 bg-white text-left border-4 border-gray-800 ">
+        <thead>
+            <tr>
+                <th class="px-4 py-2 bg-gray-800 text-blue-200 w-2/3 "></th>
+                <th class="px-4 py-2 bg-gray-800 text-blue-200 w-1/3"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="flex-none px-4 py-2 " > 
+                    <p>teconsectetur aeos itaque, soluta voluptate quod illo ipsam.lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe cupiditate maxime, eaque tenetur inventore quo fugit illo assumenda, amet adipisci laborum corporis, architecto nostrum minima reiciendis porro! Accusantium, id quae? lore </p>
+                </td>
+                <td class=" px-4 py-2 flex-none">
+                    <img class=" inline w-full mr-4  flex-none" src="picture\sgec.jpg ">
+                </td>
+            </tr>    
+        </tbody>
+    </table>
+                    
+     
 </div>
-<?php include __DIR__ . '/../footer.php' ?> <!-- Footer -->
 
+<?php include __DIR__ . '/../footer.php' ?>
 
-
-
-<!-- <div class="rounded p-3 bg-green-600"><i class="fa fa-wallet fa-2x fa-fw fa-inverse"></i></div> -->
