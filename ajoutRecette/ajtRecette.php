@@ -8,7 +8,7 @@
                         <label for="title">Titre </label>
                         <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="title" name="title" type="text">
 
-                        <label for="content">Contenu</label>
+                        <label for="content">Etapes</label>
                         <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="content" name="content" type="text">
                         
                         <label for="user_image">image</label>
