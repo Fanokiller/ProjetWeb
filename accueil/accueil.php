@@ -1,36 +1,49 @@
-<?php include __DIR__ . '/../header.php' ?>  <!-- Header -->
+<?php include __DIR__ . '/../header.php' ?>  
+
 <div class="main-content flex-1 bg-gray-100 mt-12 md:mt-2 pb-24 md:pb-5">
-                    <!--Metric Card-->
-        <div class="bg-gray-900 border border-gray-800 rounded shadow p-1 mt-6 ml-6 mr-6">
-            <div class="md:flex flex-row items-center">
-                <div class=flex-auto>    
-                    
-                    <img src=picture\sgec.jpg class="xl:p-3 h-64 w-full">
-                </div>
-                <div class="flex md: pr-6">
-                     <p class="text-right font-bold uppercase text-gray-400">Total Revenue Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, fugiat veritatis perspiciatis dignissimos esse aspernatur quia suscipit voluptatibus natus explicabo eius aut molestiae repellat, sunt cupiditate a accusantium dicta sequi! </p> 
-                </div>
-            </div>
-        </div>
-        <div class="bg-gray-900 border border-gray-800 rounded shadow p-1 mt-6 ml-6 mr-6">
-            <div class="md:flex flex-row items-center">
-            <div class="flex md: pr-6">
-                     <p class="text-left font-bold uppercase text-gray-400">Total Revenue Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, fugiat veritatis perspiciatis dignissimos esse aspernatur quia suscipit voluptatibus natus explicabo eius aut molestiae repellat, sunt cupiditate a accusantium dicta sequi! </p> 
-                </div>
-
-
-                <div class=flex-auto>    
-                    
-                    <img src=picture\sgec.jpg class="xl:p-3 h-64 w-full">
-                </div>
+<!-- 
+<div class=" text-center md:py-2 md:max-w-6xl md:mx-auto md:px-5 ">  -->
                 
-            </div>
-        </div>  
+    <table class="w-2 md:w-full h-2 bg-white text-right border-4 border-gray-800  ">       
+        <thead>
+            <tr>
+                <th class="px-4 py-2 bg-gray-800 text-blue-200 w-1/3"></th>
+                <th class="px-4 py-2 bg-gray-800 text-blue-200 w-2/3"></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr class="border-4 border-gray-800">
+                <td class="flex-none px-4 py-2 w-1/3" > 
+                    <img class=" inline w-full mr-4  flex-none" src="picture\sgec.jpg ">
+                </td>
+                <td class=" px-4 py-2 flex-none text-gray-800 w-2/3">
+                    <p>teconsectetur aeos itaque, soluta voluptate quod illo ipsam.lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe cupiditate maxime, eaque tenetur inventore quo fugit illo assumenda, amet adipisci laborum corporis, architecto nostrum minima reiciendis porro! Accusantium, id quae? lore </p>
+                </td>
+            </tr>
+        </tbody>
+    </table>        
+    <table class="w-2 md:w-full h-2 bg-white text-left border-4 border-gray-800 ">
+        <thead>
+            <tr>
+                <th class="px-4 py-2 bg-gray-800 text-blue-200 w-2/3 "></th>
+                <th class="px-4 py-2 bg-gray-800 text-blue-200 w-1/3"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="flex-none px-4 py-2 " > 
+                    <p>teconsectetur aeos itaque, soluta voluptate quod illo ipsam.lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe cupiditate maxime, eaque tenetur inventore quo fugit illo assumenda, amet adipisci laborum corporis, architecto nostrum minima reiciendis porro! Accusantium, id quae? lore </p>
+                </td>
+                <td class=" px-4 py-2 flex-none">
+                    <img class=" inline w-full mr-4  flex-none" src="picture\sgec.jpg ">
+                </td>
+            </tr>    
+        </tbody>
+    </table>
+                    
+     
 </div>
-<?php include __DIR__ . '/../footer.php' ?> <!-- Footer -->
 
-
-
-
-<!-- <div class="rounded p-3 bg-green-600"><i class="fa fa-wallet fa-2x fa-fw fa-inverse"></i></div> -->
+<?php include __DIR__ . '/../footer.php' ?>
 
