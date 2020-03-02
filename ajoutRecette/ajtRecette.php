@@ -14,17 +14,17 @@
                         <label for="user_image">image</label>
                         <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="user_image" name="user_image" type="file">
                         
-                        <label for="duree">Durée</label>
-                        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="duree" name="duree" type="text">
+                        <label for="duree">Durée en minute</label>
+                        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="duree" name="duree" type="time">
 
                         <label for="persons">Personne</label>
                         <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="persons" name="persons" type="number">
-                        <label for="type">Type de recette :</label> <br>
-                            <input type="radio" name="type" value="1">Apéros <br>
-                            <input type="radio" name="type" value="2">Entrées <br>
-                            <input type="radio" name="type" value="3">Plats <br>
-                            <input type="radio" name="type" value="4">Desserts <br>
-                        <label>Pour quelle saison :</label> <br>
+                        <label for="recipe_type">Type de recette :</label> <br>
+                            <input type="radio" name="recipe_type" value="1">Apéros <br>
+                            <input type="radio" name="recipe_type" value="2">Entrées <br>
+                            <input type="radio" name="recipe_type" value="3">Plats <br>
+                            <input type="radio" name="recipe_type" value="4">Desserts <br>
+                        <label for="season">Pour quelle saison :</label> <br>
                             <input type="radio" name="season" value="1">Hiver <br>
                             <input type="radio" name="season" value="2">Printemps <br>
                             <input type="radio" name="season" value="3">Eté <br>
