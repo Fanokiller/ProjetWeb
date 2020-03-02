@@ -24,7 +24,6 @@ if (isset($_POST['title']) && isset($_POST['content']) && isset($_FILES['user_im
             'season' => $_POST['season']
         ));
             // var_dump($req);
-            exit;
         header('Location: /ProjetWeb/succes.php');
     } else {
         header('Location: /ProjetWeb/erreur.php');
