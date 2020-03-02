@@ -20,15 +20,15 @@
                         <label for="persons">Personne</label>
                         <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="persons" name="persons" type="number">
                         <label for="type">Type de recette :</label> <br>
-                            <input type="checkbox" name="type" value="1">Apéros <br>
-                            <input type="checkbox" name="type" value="2">Entrées <br>
-                            <input type="checkbox" name="type" value="3">Plats <br>
-                            <input type="checkbox" name="type" value="4">Desserts <br>
+                            <input type="radio" name="type" value="1">Apéros <br>
+                            <input type="radio" name="type" value="2">Entrées <br>
+                            <input type="radio" name="type" value="3">Plats <br>
+                            <input type="radio" name="type" value="4">Desserts <br>
                         <label>Pour quelle saison :</label> <br>
-                            <input type="checkbox" name="season" value="1">Hiver <br>
-                            <input type="checkbox" name="season" value="2">Printemps <br>
-                            <input type="checkbox" name="season" value="3">Eté <br>
-                            <input type="checkbox" name="season" value="4">Autonme <br>
+                            <input type="radio" name="season" value="1">Hiver <br>
+                            <input type="radio" name="season" value="2">Printemps <br>
+                            <input type="radio" name="season" value="3">Eté <br>
+                            <input type="radio" name="season" value="4">Autonme <br>
                     </div>
                     <div class="flex items-center justify-between my-10 mx-16   ">
                         <button class="bg-green-500 hover:bg-green-400 text-white font-bold py-2 px-4 border-b-4 border-green-700 hover:border-green-500 rounded" type="submit">Ajout</button>
