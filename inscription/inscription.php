@@ -12,6 +12,9 @@
 
                         <label for="email">Email</label>
                         <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="email" name="email" type="mail">
+
+                        <label for="user_avatar">Votre avatar</label>
+                        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="user_avatar" name="user_avatar" type="file">
                     </div>
                     <div class="flex items-center justify-between my-10 mx-16">
                         <button class="bg-green-500 hover:bg-green-400 text-white font-bold py-2 px-4 border-b-4 border-green-700 hover:border-green-500 rounded" type="submit">Inscription</button>
