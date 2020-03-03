@@ -13,7 +13,7 @@
     <!-- Bootstrap & Tailwind core CSS -->
     <link href="https://unpkg.com/tailwindcss@%5E1.0/dist/tailwind.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="/../skeleton/asset/dashboard.css" rel="stylesheet">
+    <link href="/../ProjetWeb/asset/.css" rel="stylesheet">
     
 </head>
 
