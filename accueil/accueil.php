@@ -5,7 +5,7 @@
 
 
 <?php 
-    $bdd = new PDO('mysql:host=localhost;dbname=recipedb;charset=utf8', 'root', '');
+    $bdd = new PDO('mysql:host=localhost;port=3308;dbname=recipedb;charset=utf8', 'root', '');
     $req = $bdd->query("SELECT user_image FROM recipe");
     $articles = $req->fetchAll();
     ?>
@@ -75,16 +75,16 @@
                 
                <!-- Premier tableau (image gauche texte droite) -->
             <div id="testr">
-               <table class="w-2 w-full h-2 bg-white text-right border-4 border-gray-800  ">       
+               <table class="w-2 w-full h-2 bg-white text-right border-black px-2">       
                 <thead>
                 <tr>
-                    <th class="px-4 py-2 bg-gray-800 text-blue-200 w-1/3"></th>
-                    <th class="px-4 py-2 bg-gray-800 text-blue-200 w-2/3"></th>
+                    <th class="px-4 py-2 text-blue-200 w-1/3"></th>
+                    <th class="px-4 py-2 text-blue-200 w-2/3"></th>
                 </tr>
             </thead>
 
             <tbody>
-                <tr class="border-4 border-gray-800">
+                <tr class="border-2 border-black">
                     <td class="md:flex-none px-4 py-2 w-1/3" > 
                         <img class=" inline w-full mr-4  md:flex-none" src="picture\sgec.jpg ">
                     </td>
@@ -100,15 +100,15 @@
 
 
 
-        <table class="w-2 md:w-full h-2 bg-white text-left border-4 border-gray-800 ">
+        <table class="w-2 md:w-full h-2 bg-white text-left border-black">
             <thead>
                 <tr>
-                    <th class="px-4 py-2 bg-gray-800 text-blue-200 w-2/3 "></th>
-                    <th class="px-4 py-2 bg-gray-800 text-blue-200 w-1/3"></th>
+                    <th class="px-4 py-2 text-blue-200 w-2/3 "></th>
+                    <th class="px-4 py-2 text-blue-200 w-1/3"></th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                <tr class="border-2 border-black">
                     <td class="md:flex-none px-4 py-2 " > 
                         <p>teconsectetur aeos itaque, soluta voluptate quod illo ipsam.lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe cupiditate maxime, eaque tenetur inventore quo fugit illo assumenda, amet adipisci laborum corporis, architecto nostrum minima reiciendis porro! Accusantium, id quae? lore </p>
                     </td>
@@ -123,11 +123,11 @@
 
 
 <div id="testi">
-                <table class="bg-white  border-4 border-gray-800  ">       
+                <table class="bg-white  border-2 border-gray-300  ">       
                     <tbody>
                         <tr>
-                            <img class="border-4 border-gray-800" src="picture\sgec.jpg ">
-                            <td class=" flex-none text-center text-gray-800">
+                            <img class="border-4 border-gray-300" src="picture\sgec.jpg ">
+                            <td class=" flex-none text-center text-gray-300">
                                 <p>teconsectetur aeos itaque, soluta voluptate quod illo ipsam.lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe cupiditate maxime, eaque tenetur inventore quo fugit illo assumenda, amet adipisci laborum corporis, architecto nostrum minima reiciendis porro! Accusantium, id quae? lore </p>
                             </td>
                         </tr>
@@ -138,11 +138,11 @@
 
                 <!-- 2nd tableau (image droite texte gauche) -->
 
-                <table class="bg-white  border-4 border-gray-800  ">       
+                <table class="bg-white  border-2 border-gray-300  ">       
                     <tbody>
                         <tr>
-                            <img class="border-4 border-gray-800" src="picture\sgec.jpg ">
-                            <td class=" flex-none text-center text-gray-800">
+                            <img class="border-2 border-gray-300" src="picture\sgec.jpg ">
+                            <td class=" flex-none text-center text-gray-300">
                                 <p>teconsectetur aeos itaque, soluta voluptate quod illo ipsam.lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe cupiditate maxime, eaque tenetur inventore quo fugit illo assumenda, amet adipisci laborum corporis, architecto nostrum minima reiciendis porro! Accusantium, id quae? lore </p>
                             </td>
                         </tr>
