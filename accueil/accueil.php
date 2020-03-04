@@ -4,7 +4,11 @@
 
 
 
-
+<?php 
+    $bdd = new PDO('mysql:host=localhost;dbname=recipedb;charset=utf8', 'root', '');
+    $req = $bdd->query("SELECT user_image FROM recipe");
+    $articles = $req->fetchAll();
+    ?>
 
     <!-- fin Css pour le caroussel (début code du caroussel) -->
 
@@ -28,13 +32,19 @@
                 <li class="carousel-bullet"></li>
                 <li class="carousel-bullet"></li>
             </ul>
+            <pre>
+                
+            </pre>
             <ul class="carousel-container">
-                <li class="carousel-item ">
-                    <div class="h-1/2">
-                        <img src="picture\carentr.jpeg" class="w-full items-center ">
-                    </div>
-                </li>
-                <li class="carousel-item">
+                <?php foreach ($articles as $ligne) {?>
+                    <li class="carousel-item ">
+                        <div class="h-1/2">
+                            <img src="data:image/jpg;base64,<?php echo ($ligne['user_image']) ?>" height = "150 px">
+                        
+                        </div>
+                    </li>
+                <?php } ?>
+                <!-- <li class="carousel-item">
                     <div>
                         <img src="picture\carent.jpg" class="w-full ">
                     </div>
@@ -53,7 +63,7 @@
                     <div>
                         <img src="picture\carap.jpg" class="w-full ">
                     </div>
-                </li>
+                </li> -->
             </ul>
         </div>
     </div>
@@ -140,7 +150,7 @@
                 </table> 
 </div>
 
-        <script type="text/javascript" src="carousseljs.js"></script>
+        
 </div>
 
 
