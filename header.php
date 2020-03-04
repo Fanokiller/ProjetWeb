@@ -118,14 +118,13 @@
 
 				    <li class="flex-1 md:flex-none md:mr-3">
 						<div class="relative inline-block text-white">
-                            <button class="drop-button text-white focus:outline-none items-center">
-                            <?php
-                            if (isset($_SESSION['nickname'])) // Si le membre est connecté
-                            {
-                            echo 'Bonjour  '.$_SESSION['nickname'];
-                            }
-                            ?>
-                            <button class="dropbtnUser" id="btnUser">
+                            <button class="dropbtnUser" id="btnUser">                            
+                                <?php
+                                    if (isset($_SESSION['nickname'])) // Si le membre est connecté
+                                    {
+                                        echo 'Bonjour  '.$_SESSION['nickname'];
+                                    }
+                                ?>
                                 <i class="fa fa-caret-down fa-fw mr-1 pt-1 pl-3"></i>
                             </button>
                             <div id="DropdownUser" class="dropdown-content text-white ml-4 show" >
