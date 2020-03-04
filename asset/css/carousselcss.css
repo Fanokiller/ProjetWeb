@@ -27,7 +27,7 @@ html {
 }
 
 body {
-    background-color: #e1f0fa;
+    background-color: #ffffff;
 }
 
 h1 {
@@ -39,7 +39,7 @@ h1 {
 .container {
     width: 100%;
     margin: 0 auto;
-    border: 2px solid #bbb;
+    border: 2px solid rgb(255, 252, 252);
 }
 
 .carousel-item > div {
