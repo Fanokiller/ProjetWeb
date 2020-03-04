@@ -13,12 +13,11 @@
     <!-- Bootstrap & Tailwind core CSS -->
     <link href="https://unpkg.com/tailwindcss@%5E1.0/dist/tailwind.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
-<<<<<<< HEAD
-    <link href="/../skeleton/asset/dashboard.css" rel="stylesheet">
+   
     <link href="/../ProjetWeb/article/Article.css" rel="stylesheet">
-=======
     <link href="/../ProjetWeb/asset/css/style.css" rel="stylesheet">
->>>>>>> d438297702ab7df38c2bb1add248d6b0c337b969
+    <link href="/../ProjetWeb/asset/css/carousselcss.css" rel="stylesheet">
+    <link href="/../ProjetWeb/asset/css/tablecss.css" rel="stylesheet">
     
 </head>
 
