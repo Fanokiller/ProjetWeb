@@ -156,9 +156,5 @@
 
         <script type="text/javascript" src="carousseljs.js"></script>
 </div>
-<style>
-
-
-
 <?php include __DIR__ . '/../footer.php' ?>
 
