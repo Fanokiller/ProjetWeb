@@ -21,19 +21,28 @@ h1 {
 }
 
 .container {
-    width: 70%;
+    width: 100%;
     margin: 0 auto;
     border: 2px solid #bbb;
 }
 
 .carousel-item > div {
+
     height: 500px;
     line-height: 600px;
     font-size: 1.5em;
     text-align: center;
     color: #fff;
+    
+}
+@media only screen and (max-width: 640px){
+    .carousel-item {
+        height: 200px;
+
+    }
 }
 
+    
 .item-1 {
     background-color: #3498db;
     
