@@ -1,0 +1,13 @@
+@media (max-width: 640px) {
+
+    #testr:not(:nth-child(1)) {
+      display: none;
+    }
+}
+@media (min-width: 640px) {
+
+    #testi:not(:nth-child(1)) {
+      display: none;
+    }
+}
+
