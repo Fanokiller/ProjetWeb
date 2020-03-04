@@ -120,10 +120,19 @@ ul.dropdown li:hover>ul {
 
 /* Dropdown Button */
 
-.dropbtn {
+.dropbtnSaison {
     background-color: rgba(52, 152, 219, 0);
     color: white;
     padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtnUser {
+    background-color: rgba(52, 152, 219, 0);
+    color: white;
+    padding: 0px, 0px, 10px, 0px;
     font-size: 16px;
     border: none;
     cursor: pointer;
