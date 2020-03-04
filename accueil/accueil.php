@@ -144,9 +144,17 @@
 
         <script type="text/javascript" src="carousseljs.js"></script>
 </div>
+<<<<<<< HEAD
 
 
 
 
+||||||| 5721931
+<style>
+
+
+
+=======
+>>>>>>> e1201b735ae0067ebcde7d3d30e2a971c0626286
 <?php include __DIR__ . '/../footer.php' ?>
 

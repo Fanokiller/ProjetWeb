@@ -13,11 +13,24 @@
     <!-- Bootstrap & Tailwind core CSS -->
     <link href="https://unpkg.com/tailwindcss@%5E1.0/dist/tailwind.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
+<<<<<<< HEAD
    
+||||||| 5721931
+<<<<<<< HEAD
+    <link href="/../skeleton/asset/dashboard.css" rel="stylesheet">
+=======
+
+>>>>>>> e1201b735ae0067ebcde7d3d30e2a971c0626286
     <link href="/../ProjetWeb/article/Article.css" rel="stylesheet">
     <link href="/../ProjetWeb/asset/css/style.css" rel="stylesheet">
+<<<<<<< HEAD
     <link href="/../ProjetWeb/asset/css/carousselcss.css" rel="stylesheet">
     <link href="/../ProjetWeb/asset/css/tablecss.css" rel="stylesheet">
+||||||| 5721931
+>>>>>>> d438297702ab7df38c2bb1add248d6b0c337b969
+=======
+
+>>>>>>> e1201b735ae0067ebcde7d3d30e2a971c0626286
     
 </head>
 
@@ -36,11 +49,11 @@
                         <i class="fas fa-gamepad fa-fw mr-1"></i><span class="pb-1 md:pb-0 text-xs md:text-base text-gray-600 md:text-gray-400 block md:inline-block ml-2">Recettes</span>
                     </a>
                 <li class="mr-3 dropdown">
-                        <button onclick="myFunction()" class="dropbtn">
+                        <button class="dropbtn" id="btnSaison">
                         <i class="fas fa-search fa-fw mr-1"></i>Saison 
                         <i class="fa fa-caret-down fa-fw mr-1 pt-1 pl-3"></i>
                         </button>
-                        <div id="myDropdown" class="dropdown-content text-white ml-4 show" >
+                        <div id="DropdownSaison" class="dropdown-content text-white ml-4 show" >
                             <a href="#"><i class="fas fa-snowflake fa-fw mr-1"></i>Hiver</a>
                             <a href="#"><i class="fas fa-fan fa-fw mr-1"></i>Printemps</a>
                             <a href="#"><i class="fas fa-sun fa-fw mr-1"></i>Eté</a>
@@ -83,6 +96,9 @@
                 </span>
             </div>
 				<ul class="list-reset flex justify-between flex-1 md:flex-none items-center px-4 mx-auto">
+                    <li class="flex-1 md:flex-none md:mr-3">
+					    <a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="/../ProjetWeb/inscription/inscription.php"><i class="fas fa-user-plus fa-fw mr-1"></i> Inscription</a>
+				    </li>
                         <?php
                             if (isset($_SESSION['nickname'])):
 
@@ -99,23 +115,23 @@
                                 </a>
                             </li>
                         <?php endif ?>
-				    <li class="flex-1 md:flex-none md:mr-3">
-					    <a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="/../ProjetWeb/inscription/inscription.php"><i class="fas fa-user-plus fa-fw mr-1"></i> Inscription</a>
-				    </li>
+
 				    <li class="flex-1 md:flex-none md:mr-3">
 						<div class="relative inline-block text-white">
-                            <button onclick="toggleDD('myDropdown')" class="drop-button text-white focus:outline-none">
+                            <button class="drop-button text-white focus:outline-none">
                             <?php
                             if (isset($_SESSION['nickname'])) // Si le membre est connecté
                             {
                             echo 'Bonjour  '.$_SESSION['nickname'];
                             }
-                            ?><svg class="h-3 fill-current inline-block mr-1 -mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg></button>
-                            <div id="myDropdown" class="dropdownlist absolute bg-black text-white overflow-auto z-30 invisible">
-                                <a href="/../ProjetWeb/user/user.php" class="hover:bg-grey-darkest text-white text-sm no-underline hover:no-underline block"><i class="fa fa-user fa-fw mr-1"></i>Profile</a>
-                                <a href="#" class="hover:bg-grey-darkest text-white text-sm no-underline hover:no-underline block"><i class="fa fa-cog fa-fw mr-1"></i>Settings</a>
+                            ?>
+                            <button class="dropbtn" id="btnUser">
+                                <i class="fa fa-caret-down fa-fw mr-1 pt-1 pl-3"></i>
+                            </button>
+                            <div id="DropdownUser" class="dropdown-content text-white ml-4 show" >
+                                <a href="#"><i class="fas fa-user fa-fw mr-1"></i>User</a>
+                                </div>
                             </div>
-                        </div>
                     </li>
                 </ul>
             </div>
