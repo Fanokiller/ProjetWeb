@@ -2,9 +2,7 @@
 
 <div class="main-content md:flex-1 bg-gray-100 mt-12 md:mt-2 pb-24 md:pb-5">
 
-    <!-- Partie Css pour que le caroussel soit fonctionnel  -->
-    <link rel="stylesheet" href="carousselcss.css" />
-    <link rel="stylesheet" href="tablecss.css" />
+
 
 
 
@@ -144,17 +142,9 @@
 
         <script type="text/javascript" src="carousseljs.js"></script>
 </div>
-<<<<<<< HEAD
 
 
 
 
-||||||| 5721931
-<style>
-
-
-
-=======
->>>>>>> e1201b735ae0067ebcde7d3d30e2a971c0626286
 <?php include __DIR__ . '/../footer.php' ?>
 
