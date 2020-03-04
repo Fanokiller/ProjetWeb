@@ -1,4 +1,11 @@
-<?php session_start();?>
+<?php
+session_start(); 
+require 'Fonction/db.class.php';
+$DB = new DB();
+require 'Fonction/cart.class.php';
+$panier = new panier();
+
+?>
 <!doctype html>
 <html lang="fr">
 <head>
@@ -56,7 +63,7 @@
                 if (isset($_SESSION['nickname'])):
 
                     ?>
-                    <a href="/../ProjetWeb/cart/cart.php" class="block py-1 md:py-3 pl-1 align-middle text-white no-underline hover:text-white border-b-2 border-teal-500 hover:border-green-300">
+                    <a href="/../ProjetWeb/cart/cartIndex.php" class="block py-1 md:py-3 pl-1 align-middle text-white no-underline hover:text-white border-b-2 border-teal-500 hover:border-green-300">
                     <i class="fas fa-shopping-cart fa-fw mr-1"></i><span class="pb-1 md:pb-0 text-xs md:text-base text-white md:text-white block md:inline-block ml-2">Cart</span>
                     </a>
                 </li>
