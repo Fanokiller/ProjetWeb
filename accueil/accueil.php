@@ -2,22 +2,8 @@
 
 <div class="main-content md:flex-1 bg-gray-100 mt-12 md:mt-2 pb-24 md:pb-5">
 
-    <!-- Partie Css pour que le caroussel soit fonctionnel  -->
-    <link rel="stylesheet" href="carousselcss.css" />
-    <link rel="stylesheet" href="tablecss.css" />
 
-    <style>
-    .snap-x {
-        scroll-snap-type: x mandatory;
-        
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-    }
-    .snap-start {
-    scroll-snap-align: start;
-    }
 
-    </style>
 
 
     <!-- fin Css pour le caroussel (début code du caroussel) -->
@@ -156,5 +142,9 @@
 
         <script type="text/javascript" src="carousseljs.js"></script>
 </div>
+
+
+
+
 <?php include __DIR__ . '/../footer.php' ?>
 

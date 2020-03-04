@@ -14,10 +14,14 @@
     <link href="https://unpkg.com/tailwindcss@%5E1.0/dist/tailwind.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
 
+    <link href="/../skeleton/asset/dashboard.css" rel="stylesheet">
+
     <link href="/../ProjetWeb/article/Article.css" rel="stylesheet">
     <link href="/../ProjetWeb/asset/css/style.css" rel="stylesheet">
 
-    
+    <link href="/../ProjetWeb/asset/css/carousselcss.css" rel="stylesheet">
+    <link href="/../ProjetWeb/asset/css/tablecss.css" rel="stylesheet">
+
 </head>
 
 <body class="bg-teal-300 font-sans leading-normal tracking-normal mt-12">
