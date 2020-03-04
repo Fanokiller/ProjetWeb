@@ -13,25 +13,15 @@
     <!-- Bootstrap & Tailwind core CSS -->
     <link href="https://unpkg.com/tailwindcss@%5E1.0/dist/tailwind.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
-<<<<<<< HEAD
-   
-||||||| 5721931
-<<<<<<< HEAD
-    <link href="/../skeleton/asset/dashboard.css" rel="stylesheet">
-=======
 
->>>>>>> e1201b735ae0067ebcde7d3d30e2a971c0626286
+    <link href="/../skeleton/asset/dashboard.css" rel="stylesheet">
+
     <link href="/../ProjetWeb/article/Article.css" rel="stylesheet">
     <link href="/../ProjetWeb/asset/css/style.css" rel="stylesheet">
-<<<<<<< HEAD
+
     <link href="/../ProjetWeb/asset/css/carousselcss.css" rel="stylesheet">
     <link href="/../ProjetWeb/asset/css/tablecss.css" rel="stylesheet">
-||||||| 5721931
->>>>>>> d438297702ab7df38c2bb1add248d6b0c337b969
-=======
 
->>>>>>> e1201b735ae0067ebcde7d3d30e2a971c0626286
-    
 </head>
 
 <body class="bg-gray-800 font-sans leading-normal tracking-normal mt-12">
