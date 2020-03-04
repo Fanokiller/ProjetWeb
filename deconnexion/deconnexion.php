@@ -25,4 +25,4 @@
 
     ?>
 </div>
-<?php include __DIR__ . '/../foot.php' ?>
+<?php include __DIR__ . '/../footer.php' ?>
