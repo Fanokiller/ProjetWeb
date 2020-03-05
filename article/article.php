@@ -1,7 +1,5 @@
 <?php include __DIR__ . '/../header.php' ?>
     <!-- Header -->
-    <?php $articles = $DB->query('SELECT * FROM recipe')?>
-    <?php foreach ($articles as $article): ?>
     <div class="main-content flex-1 bg-white mt-12 md:mt-2 pb-24 md:pb-5">
         <div class="flex flex-wrap mt-6">
             <div class="w-full md:w-1/2 p-3 mx-auto">
@@ -28,7 +26,7 @@
                     <div class="mx-auto self-start pb-5"><i class="far fa-heart fa-5x"></i></div>
                     <div class="flex justify-between">
                         <button><span class="mx-auto"><i class="far fa-file-pdf fa-2x"></i></span></button>
-                        <button><span class="mx-auto"><i class="far fa-share-square fa-2x"></i></span></button>
+                        <form method="Post" action="/../ProjetWeb/mail.php" enctype="multipart/form-data"><button value="mail"><span class="mx-auto"><i class="far fa-share-square fa-2x"></i></span></button></form>
                         <button value="print" onclick="window.print()"><span class="mx-auto"><i class="fas fa-print fa-2x"></i></span></button>
                         <button><span class="mx-auto"><i class="far fa-star fa-2x"></i></span></button>
                     </div>
@@ -76,7 +74,7 @@
                             </ol>
                         </div>
                     </div>
-                <?php endforeach ?>
+                
                 </div>
             </div>
         </div>
