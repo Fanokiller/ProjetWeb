@@ -50,10 +50,10 @@ $panier = new panier();
                             <i class="fa fa-caret-down fa-fw mr-1 pt-1 pl-3"></i>
                         </button>
                         <div id="DropdownSaison" class="dropdown-content text-white ml-4 show" >
-                            <a href="#"><i class="fas fa-snowflake fa-fw mr-1"></i>Hiver</a>
                             <a href="#"><i class="fas fa-fan fa-fw mr-1"></i>Printemps</a>
                             <a href="#"><i class="fas fa-sun fa-fw mr-1"></i>Eté</a>
                             <a href="#"><i class="fas fa-leaf fa-fw mr-1"></i>Automne</a>
+                            <a href="#"><i class="fas fa-snowflake fa-fw mr-1"></i>Hiver</a>
                         </div>
                 </li>
                 </li>
