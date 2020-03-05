@@ -1,7 +1,5 @@
 <?php include __DIR__ . '/../header.php' ?>
 <div class="main-content flex-1 bg-gray-100 mt-12 md:mt-2 pb-24 md:pb-5">
-<?php include __DIR__ . '/../header.php' ?>
-<div class="main-content flex-1 bg-gray-100 mt-12 md:mt-2 pb-24 md:pb-5">
 <h2 class="text-center p-2 text-3xl text-gray-900 font-serif">- Apéritifs -</h2>
     <div class="inline-flex">
       <!-- Images avec un lien de recette -->
