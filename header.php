@@ -142,4 +142,4 @@ $panier = new panier();
                 </ul>
             </div>
     </nav>
-    <div class="flex flex-col md:flex-row" id="page-warp">
+    <div class="flex flex-col md:flex-row">
