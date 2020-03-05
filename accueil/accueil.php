@@ -36,7 +36,7 @@
                 <?php foreach ($articles as $ligne) {?>
                     <li class="carousel-item ">
                         <div class="">
-                            <img src="data:image/jpg;base64,<?php echo ($ligne['user_image']) ?>" height = "150 px" width="100%">
+                            <img src="data:image/jpg;base64,<?php echo ($ligne['user_image']) ?>" height = "150 px" width="25%">
                         
                         </div>
                     </li>
