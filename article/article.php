@@ -6,11 +6,11 @@
                 <div class="bg-red-100 rounded shadow p-2 text-center">
                     <div class="container bg-light border rounded border-light">
                         <span class="text-center font-bold text-5xl mx-auto">
-                            <p class=" bg-red-500"style="color:white"> <?= $article->title; ?></p><br>
+                            <p class=" bg-red-500"style="color:white"> <?= $article->title; ?><!-- Afficher le titre qui est contenu dans la BDD --></p><br>
                         </span>              
                     <div class="flex justify-between pb-4">
                         <span class="inline-block mx-auto text-lg "><i class="fas fa-stopwatch h-10 w-10 fa-2x" style="color:gray"></i><br>
-                        20 minutes</span>
+                    <?= $article->duree; ?> minutes</span> <!-- Afficher la durée inscrite dans la BDD -->
                         <span class="inline-block mx-auto text-lg"> 
                         <i class="fas fa-circle h-10 w-10 fa-2x" style="color:green"></i>
                         <i class="fas fa-circle h-10 w-10 fa-2x" style="color:gray"></i>
@@ -18,7 +18,7 @@
                         <span class="inline-block mx-auto text-lg "><i class="fas fa-euro-sign mr-1 h-10 w-10 fa-2x"style="color:gray"></i><br>
                         Bon marché</span>
                         <span class="inline-block mx-auto text-lg">
-                        <i class="fas fa-user-alt h-10 w-10 fa-2x" style="color:gray"></i><br> 4</span>
+                        <i class="fas fa-user-alt h-10 w-10 fa-2x" style="color:gray"></i><br><?= $article->persons; ?></span>
                     </div>
                     <img src="data:image/jpg;base64,<?= $article->user_image ?>"></span>
                 </div>
@@ -72,10 +72,12 @@
                                 <li class="text-gray-700 text-base text-left">Déposez sur une plaque allant au four. Mouillez légèrement au doigt le dessus de chaque feuilleté et parsemez de grains de sésame.</li>
                                 <br>
                             </ol>
-                        </div>
+                        
+                    </div>
                     </div>
                 
                 </div>
             </div>
         </div>
-    </div>
+    </div><?php endforeach ?>
+    <?php include __DIR__ . '/../footer.php' ?>
