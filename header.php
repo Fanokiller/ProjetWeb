@@ -32,7 +32,6 @@ $panier = new panier();
 </head>
 
 <body class="bg-white font-sans leading-normal tracking-normal mt-12">
-    
     <nav class="bg-teal-500 pt-1 md:pt-2 pb-1 px-1 mt-0 h-auto fixed w-full z-20 top-0 px-4">
         <div class="flex flex-shrink justify-center md:justify-start text-white">
         <ul class="list-reset flex justify-between flex-1 md:flex-none items-center">
