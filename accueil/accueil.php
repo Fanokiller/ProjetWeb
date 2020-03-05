@@ -2,18 +2,18 @@
 
 <div class="main-content md:flex-1 bg-gray-100 mt-12 md:mt-2 pb-24 md:pb-5">
 
-
+<!-- Lecture de la bdd -->
 
 <?php 
-    $bdd = new PDO('mysql:host=localhost;port=3308;dbname=recipedb;charset=utf8', 'root', '');
+    $bdd = new PDO('mysql:host=localhost;port=3306;dbname=recipedb;charset=utf8', 'root', '');
     $req = $bdd->query("SELECT user_image FROM recipe");
     $articles = $req->fetchAll();
     ?>
 
-    <!-- fin Css pour le caroussel (début code du caroussel) -->
+    <!-- début code du caroussel -->
 
 
-    <!-- caroussel 1ère image -->
+    <!-- caroussel 1ère image (unique si prise par bdd)-->
 
 
     <div class="md:pt-6">
@@ -32,9 +32,6 @@
                 <li class="carousel-bullet"></li>
                 <li class="carousel-bullet"></li>
             </ul>
-            <pre>
-                
-            </pre>
             <ul class="carousel-container">
                 <?php foreach ($articles as $ligne) {?>
                     <li class="carousel-item ">
@@ -74,9 +71,9 @@
                 <!-- Début tableau format < 640px -->
                 
                <!-- Premier tableau (image gauche texte droite) -->
-            <div id="testr">
-               <table class="w-2 w-full h-2 bg-white text-right border-black px-2">       
-                <thead>
+    <div id="testr">
+        <table class="w-2 w-full h-2 bg-white text-right border-black px-2">       
+            <thead>
                 <tr>
                     <th class="px-4 py-2 text-blue-200 w-1/3"></th>
                     <th class="px-4 py-2 text-blue-200 w-2/3"></th>
@@ -118,43 +115,40 @@
                 </tr>    
             </tbody>
         </table>
-</div>
+    </div>
 
 
 
-<div id="testi">
-                <table class="bg-white  border-2 border-gray-300  ">       
-                    <tbody>
-                        <tr>
-                            <img class="border-4 border-gray-300" src="picture\sgec.jpg ">
-                            <td class=" flex-none text-center text-gray-300">
-                                <p>teconsectetur aeos itaque, soluta voluptate quod illo ipsam.lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe cupiditate maxime, eaque tenetur inventore quo fugit illo assumenda, amet adipisci laborum corporis, architecto nostrum minima reiciendis porro! Accusantium, id quae? lore </p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+    <div id="testi">
+        <table class="bg-white  border-2 border-gray-300  ">       
+            <tbody>
+                <tr>
+                    <img class="border-4 border-gray-300" src="picture\sgec.jpg ">
+                    <td class=" flex-none text-center text-gray-300">
+                        <p>teconsectetur aeos itaque, soluta voluptate quod illo ipsam.lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe cupiditate maxime, eaque tenetur inventore quo fugit illo assumenda, amet adipisci laborum corporis, architecto nostrum minima reiciendis porro! Accusantium, id quae? lore </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
                  
 
 
                 <!-- 2nd tableau (image droite texte gauche) -->
 
-                <table class="bg-white  border-2 border-gray-300  ">       
-                    <tbody>
-                        <tr>
-                            <img class="border-2 border-gray-300" src="picture\sgec.jpg ">
-                            <td class=" flex-none text-center text-gray-300">
-                                <p>teconsectetur aeos itaque, soluta voluptate quod illo ipsam.lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe cupiditate maxime, eaque tenetur inventore quo fugit illo assumenda, amet adipisci laborum corporis, architecto nostrum minima reiciendis porro! Accusantium, id quae? lore </p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table> 
-</div>
+        <table class="bg-white  border-2 border-gray-300  ">       
+            <tbody>
+                <tr>
+                    <img class="border-2 border-gray-300" src="picture\sgec.jpg ">
+                    <td class=" flex-none text-center text-gray-300">
+                        <p>teconsectetur aeos itaque, soluta voluptate quod illo ipsam.lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe cupiditate maxime, eaque tenetur inventore quo fugit illo assumenda, amet adipisci laborum corporis, architecto nostrum minima reiciendis porro! Accusantium, id quae? lore </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table> 
+    </div>
 
         
 </div>
 
 
-
-
 <?php include __DIR__ . '/../footer.php' ?>
-
