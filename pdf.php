@@ -101,7 +101,7 @@ $pdf->Cell(50,6,'titre :'.' '.$title,1,0,'L',1);
 // $pdf->SetX(80);
 // $pdf->Image($user_image,65 ,90,-200, -200,'jpeg');
 
-$pdf->Image($user_image,60,30,90,0,'JPG');
+// $pdf->Image($user_image,60,30,90,0,);
 
 //test insertion image 
 $pdf->SetFont('Arial','B',12);
