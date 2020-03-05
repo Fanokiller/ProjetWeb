@@ -17,10 +17,7 @@
         <img class="h-full w-full rounded-lg transform scale-100 hover:scale-110 transition duration-150"  src=img/macaron.jpg>
         </a></div>
     </div>
-<<<<<<< HEAD
-=======
-    <!-- Pavés de texte sous les images de recettes correspondantes -->
->>>>>>> Willem
+<!-- Pavés de texte sous les images de recettes correspondantes -->
     <div class="inline-flex">
     <div class="w-1/3 rounded overflow-auto shadow-xl my-2 -my-4 p-2 m-8 mb-4">
   <div class="px-6 py-4">
