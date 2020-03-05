@@ -4,13 +4,13 @@
 
 <!-- Lecture de la bdd -->
 
-<!-- <?php 
-    $bdd = new PDO('mysql:host=localhost;port=3308;dbname=recipedb;charset=utf8', 'root', '');
+<?php 
+    $bdd = new PDO('mysql:host=localhost;port=3306;dbname=recipedb;charset=utf8', 'root', '');
     $req = $bdd->query("SELECT user_image FROM recipe");
     $articles = $req->fetchAll();
-    ?> -->
+    ?>
 
-    <!-- début code du caroussel -->
+                <!-- début code du caroussel -->
 
 
     <!-- caroussel 1ère image (unique si prise par bdd)-->
@@ -64,12 +64,11 @@
             </ul>
         </div>
     </div>
-
-
                 <!-- fin caroussel -->
 
+
+
                 <!-- Début tableau format < 640px -->
-                
                <!-- Premier tableau (image gauche texte droite) -->
     <div id="testr">
         <table class="w-2 w-full h-2 bg-white text-right border-black px-2">       
@@ -91,12 +90,7 @@
                 </tr>
             </tbody>
         </table> 
-
-
                 <!-- 2nd tableau (image droite texte gauche) -->
-
-
-
         <table class="w-2 md:w-full h-2 bg-white text-left border-black">
             <thead>
                 <tr>
@@ -115,10 +109,7 @@
                 </tr>    
             </tbody>
         </table>
-    
-
                         <!-- 3rd tableau (image gauche texte droite) -->
-
                         <table class="w-2 w-full h-2 bg-white text-right border-black px-2">       
             <thead>
                 <tr>
@@ -138,11 +129,7 @@
                 </tr>
             </tbody>
         </table> 
-
-
                         <!-- 4th tableau (image droite texte gauche) -->
-
-
         <table class="w-2 md:w-full h-2 bg-white text-left border-black">
             <thead>
                 <tr>
@@ -165,7 +152,6 @@
 
                             <!-- passage > 640 px -->
 
-
     <div id="testi">
         <table class="bg-white  border-2 border-gray-300  ">       
             <tbody>
@@ -177,11 +163,7 @@
                 </tr>
             </tbody>
         </table>
-                 
-
-
                 <!-- 2nd tableau (image droite texte gauche) -->
-
         <table class="bg-white  border-2 border-gray-300  ">       
             <tbody>
                 <tr>
@@ -193,7 +175,6 @@
             </tbody>
         </table> 
                                         <!-- 3rd tableau -->
-
         <table class="bg-white  border-2 border-gray-300  ">       
             <tbody>
                 <tr>
@@ -204,11 +185,7 @@
                 </tr>
             </tbody>
         </table>
-                 
-
-
                                      <!-- 4th tableau -->
-
         <table class="bg-white  border-2 border-gray-300  ">       
             <tbody>
                 <tr>
@@ -219,10 +196,7 @@
                 </tr>
             </tbody>
         </table>
-
     </div>
-
-        
 </div>
 
 
