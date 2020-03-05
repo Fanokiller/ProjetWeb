@@ -1,5 +1,7 @@
 <?php include __DIR__ . '/../header.php' ?>
     <!-- Header -->
+    <?php $articles = $DB->query('SELECT * FROM recipe')?>
+    <?php foreach ($articles as $article): ?>
     <div class="main-content flex-1 bg-white mt-12 md:mt-2 pb-24 md:pb-5">
         <div class="flex flex-wrap mt-6">
             <div class="w-full md:w-1/2 p-3 mx-auto">
@@ -8,20 +10,20 @@
                         <span class="text-center font-bold text-5xl mx-auto">
                             <p class=" bg-red-500"style="color:white"> <?= $article->title; ?><!-- Afficher le titre qui est contenu dans la BDD --></p><br>
                         </span>              
-                    <div class="flex justify-between pb-4">
-                        <span class="inline-block mx-auto text-lg "><i class="fas fa-stopwatch h-10 w-10 fa-2x" style="color:gray"></i><br>
-                    <?= $article->duree; ?> minutes</span> <!-- Afficher la durée inscrite dans la BDD -->
-                        <span class="inline-block mx-auto text-lg"> 
-                        <i class="fas fa-circle h-10 w-10 fa-2x" style="color:green"></i>
-                        <i class="fas fa-circle h-10 w-10 fa-2x" style="color:gray"></i>
-                        <i class="fas fa-circle h-10 w-10 fa-2x" style="color:gray"></i><br>Facile</span>                        
-                        <span class="inline-block mx-auto text-lg "><i class="fas fa-euro-sign mr-1 h-10 w-10 fa-2x"style="color:gray"></i><br>
-                        Bon marché</span>
-                        <span class="inline-block mx-auto text-lg">
-                        <i class="fas fa-user-alt h-10 w-10 fa-2x" style="color:gray"></i><br><?= $article->persons; ?></span>
+                        <div class="flex justify-between pb-4">
+                            <span class="inline-block mx-auto text-lg "><i class="fas fa-stopwatch h-10 w-10 fa-2x" style="color:gray"></i><br>
+                                <?= $article->duree; ?> minutes</span> <!-- Afficher la durée inscrite dans la BDD -->
+                            <span class="inline-block mx-auto text-lg"> 
+                                <i class="fas fa-circle h-10 w-10 fa-2x" style="color:green"></i>
+                                <i class="fas fa-circle h-10 w-10 fa-2x" style="color:gray"></i>
+                                <i class="fas fa-circle h-10 w-10 fa-2x" style="color:gray"></i><br>Facile</span>                        
+                            <span class="inline-block mx-auto text-lg "><i class="fas fa-euro-sign mr-1 h-10 w-10 fa-2x"style="color:gray"></i><br>
+                            Bon marché</span>
+                            <span class="inline-block mx-auto text-lg">
+                            <i class="fas fa-user-alt h-10 w-10 fa-2x" style="color:gray"></i><br><?= $article->persons; ?></span>
                     </div>
-                    <img src="data:image/jpg;base64,<?= $article->user_image ?>"></span>
-                </div>
+                    <img class="w-full" src="data:image/jpg;base64,<?= $article->user_image ?>"></span>
+                    </div>
                 <div class="w-full p-3 border border-grey-300 rounded shadow p-2">
                     <div class="mx-auto self-start pb-5"><i class="far fa-heart fa-5x"></i></div>
                     <div class="flex justify-between">
@@ -79,5 +81,5 @@
                 </div>
             </div>
         </div>
-    </div><?php endforeach ?>
-    <?php include __DIR__ . '/../footer.php' ?>
+<?php endforeach ?>
+<?php include __DIR__ . '/../footer.php' ?>
