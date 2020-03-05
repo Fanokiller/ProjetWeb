@@ -34,10 +34,11 @@ if (isset($_POST['title']) && isset($_POST['content']) && isset($_FILES['user_im
     if (strlen($_POST['title']) != 0 && strlen($_POST['content']) != 0 && strlen($_POST['duree']) !=0 && strlen($_POST['recipe_type']) && strlen($_POST['season'])) {
         $contenu_binaire=file_get_contents($_FILES['user_image']['tmp_name']);
         $image = base64_encode($contenu_binaire);
-        $req = $bdd->prepare('INSERT INTO recipe (title,content,user_image,duree,persons,recipe_type,season) VALUES (:title,:content,:user_image,:duree,:persons,:recipe_type,:season)');
+        $req = $bdd->prepare('INSERT INTO recipe (title,content,etapes,user_image,duree,persons,recipe_type,season) VALUES (:title,:content,:etapes,:user_image,:duree,:persons,:recipe_type,:season)');
         $req->execute(array(
             'title' => $_POST['title'],
             'content' => $_POST['content'],
+            'etapes' => $_POST['etapes'],
             'duree' => $_POST['duree'],
             'persons' => $_POST['persons'],
             'user_image' => $image,
