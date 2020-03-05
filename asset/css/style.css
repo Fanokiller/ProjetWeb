@@ -266,3 +266,8 @@ ul.dropdown li:hover>ul {
     float: right;
     padding-right: 8px;
 }
+
+.taille-img-index {
+    width: 800px;
+    height: 598px;
+}
