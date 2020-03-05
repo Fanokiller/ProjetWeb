@@ -1,12 +1,14 @@
 <?php include __DIR__ . '/../header.php' ?>
     <!-- Header -->
+    <?php $articles = $DB->query('SELECT * FROM recipe')?>
+    <?php foreach ($articles as $article): ?>
     <div class="main-content flex-1 bg-white mt-12 md:mt-2 pb-24 md:pb-5">
         <div class="flex flex-wrap mt-6">
             <div class="w-full md:w-1/2 p-3 mx-auto">
                 <div class="bg-red-100 rounded shadow p-2 text-center">
                     <div class="container bg-light border rounded border-light">
                         <span class="text-center font-bold text-5xl mx-auto">
-                            <p class=" bg-red-500"style="color:white"> Saucisse apéro </p><br>
+                            <p class=" bg-red-500"style="color:white"> <?= $article->title; ?></p><br>
                         </span>              
                     <div class="flex justify-between pb-4">
                         <span class="inline-block mx-auto text-lg "><i class="fas fa-stopwatch h-10 w-10 fa-2x" style="color:gray"></i><br>
@@ -20,7 +22,7 @@
                         <span class="inline-block mx-auto text-lg">
                         <i class="fas fa-user-alt h-10 w-10 fa-2x" style="color:gray"></i><br> 4</span>
                     </div>
-                    <img class="mx-auto" src="https://cac.img.pmdstatic.net/fit/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2Fcac.2F2018.2F09.2F25.2F3c877540-564b-4959-9880-9bbbbdb72e65.2Ejpeg/748x372/quality/80/crop-from/center/saucisse-feuillete-apero.jpeg"></span>
+                    <img src="data:image/jpg;base64,<?= $article->user_image ?>"></span>
                 </div>
                 <div class="w-full p-3 border border-grey-300 rounded shadow p-2">
                     <div class="mx-auto self-start pb-5"><i class="far fa-heart fa-5x"></i></div>
@@ -74,12 +76,8 @@
                             </ol>
                         </div>
                     </div>
-
+                <?php endforeach ?>
                 </div>
             </div>
-
         </div>
-    </div>
-    </div>
-
     </div>
