@@ -134,7 +134,8 @@ $panier = new panier();
                                 <i class="fa fa-caret-down fa-fw mr-1 pt-1 pl-3"></i>
                             </button>
                             <div id="DropdownUser" class="dropdown-content text-white ml-4 show" >
-                                <a href="#"><i class="fas fa-user fa-fw mr-1"></i>User</a>
+                                <a href="/../ProjetWeb/user/user.php"><i class="fas fa-user fa-fw mr-1"></i>User</a>
+                                <a href="/../ProjetWeb/admin/adminIndex.php"><i class="fas fa-user-shield fa-fw mr-1"></i>Admin</a>
                                 </div>
                             </div>
                     </li>
