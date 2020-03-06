@@ -114,7 +114,7 @@ $panier = new panier();
                     </div>
                 </span> -->
             </div>
-				<ul class="list-reset flex justify-between flex-1 md:flex-none items-center px-4">
+			<ul class="list-reset flex justify-between flex-1 md:flex-none items-center px-4">
                     <!-- <li class="flex-1 md:flex-none md:mr-3">
 					    <a class="inline-block text-white no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="/../ProjetWeb/inscription/inscription.php"><i class="fas fa-user-plus fa-fw mr-1"></i> Inscription</a>
 				    </li> -->
@@ -122,28 +122,24 @@ $panier = new panier();
                             if (isset($_SESSION['nickname'])):
 
                         ?>
-                            <li class="flex-1 md:flex-none md:mr-3">
-                                <a class="inline-block text-white no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="/../ProjetWeb/deconnexion/deconnexion.php">
-                                    Deconnexion
-                                </a>
-                            </li>
-                            <li class="flex-1 md:flex-none md:mr-3">
-					            <a class="inline-block text-white no-underline hover:text-gray-200 hover:text-underline py-2 px-4 hidden" href="/../ProjetWeb/inscription/inscription.php"><i class="fas fa-user-plus fa-fw mr-1"></i> Inscription</a>
-				            </li>
+                        <li class="flex-1 md:flex-none md:mr-3">
+                            <a class="inline-block text-white no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="/../ProjetWeb/deconnexion/deconnexion.php"> Deconnexion</a>   
+                        </li>
+                        <li class="flex-1 md:flex-none md:mr-3">
+					        <a class="inline-block text-white no-underline hover:text-gray-200 hover:text-underline py-2 px-4 hidden" href="/../ProjetWeb/inscription/inscription.php"><i class="fas fa-user-plus fa-fw mr-1"></i> Inscription</a>
+				        </li>
                         <?php else :  ?>
-                            <li class="flex-1 md:flex-none md:mr-3">
-                                <a class="inline-block text-white no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="/../ProjetWeb/connexion/connexion.php">
-                                    Connexion
-                                </a>
-                            </li>
-                            <li class="flex-1 md:flex-none md:mr-3">
-					            <a class="inline-block text-white no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="/../ProjetWeb/inscription/inscription.php"><i class="fas fa-user-plus fa-fw mr-1"></i> Inscription</a>
-				            </li>
+                        <li class="flex-1 md:flex-none md:mr-3">
+                            <a class="inline-block text-white no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="/../ProjetWeb/connexion/connexion.php">Connexion</a>
+                        </li>
+                        <li class="flex-1 md:flex-none md:mr-3">
+					        <a class="inline-block text-white no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="/../ProjetWeb/inscription/inscription.php"><i class="fas fa-user-plus fa-fw mr-1"></i> Inscription</a>
+				        </li>
                         <?php endif ?>
 
-				    <li class="flex-1 md:flex-none md:mr-3">
-						<div class="relative inline-block text-white">
-                            <button class="dropbtnUser" id="btnUser">                            
+				        <li class="flex-1 md:flex-none md:mr-3">
+						    <div class="relative inline-block text-white">
+                                <button class="dropbtnUser" id="btnUser">                            
                                 <?php
                                     if (isset($_SESSION['nickname'])) // Si le membre est connecté
                                     {
@@ -152,16 +148,20 @@ $panier = new panier();
                                     }
 
                                 ?>
-                                <i class="fa fa-caret-down fa-fw mr-1 pt-1 pl-3"></i>
-                            </button>
-                            <div id="DropdownUser" class="dropdown-content text-white ml-4 show" >
-                                <a href="/../ProjetWeb/user/user.php?id_user=<?= $id_user?>"><i class="fas fa-user fa-fw mr-1"></i>User</a>
-                                <a href="/../ProjetWeb/admin/adminIndex.php"><i class="fas fa-user-shield fa-fw mr-1"></i>Admin</a>
+                                    <i class="fa fa-caret-down fa-fw mr-1 pt-1 pl-3"></i>
+                                </button>
+                                <div id="DropdownUser" class="dropdown-content text-white ml-4 show" >
+                                    <a href="/../ProjetWeb/user/user.php?id_user=<?= $id_user?>">
+                                        <i class="fas fa-user fa-fw mr-1"></i>User
+                                    </a>
+                                    <a href="/../ProjetWeb/admin/adminIndex.php">
+                                        <i class="fas fa-user-shield fa-fw mr-1"></i>Admin
+                                    </a>
                                 </div>
                             </div>
-                    </li>
+                        </li>
                 </ul>
             </div>
-    </nav>
+        </nav>
     <!-- fin navbar  -->
     <div class="flex flex-col md:flex-row"> <!-- Div qui se ferme dans le footer, fait le body-->
