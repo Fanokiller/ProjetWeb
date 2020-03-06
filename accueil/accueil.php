@@ -81,8 +81,8 @@
                     <td class="md:flex-none px-4 py-2 w-1/3" > 
                         <img class=" inline w-full mr-4  md:flex-none" src="/../Projetweb/img/saucisse-feuillete-apero.jpeg ">
                     </td>
-                    <td class=" px-4 py-2 md:flex-none text-gray-800 w-2/3">
-                        <p>teconsectetur aeos itaque, soluta voluptate quod illo ipsam.lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe cupiditate maxime, eaque tenetur inventore quo fugit illo assumenda, amet adipisci laborum corporis, architecto nostrum minima reiciendis porro! Accusantium, id quae? lore </p>
+                    <td class=" px-4 py-2 md:flex-none text-gray-800 w-2/3 text-left">
+                        <p>Apéritifs</p>
                     </td>
                 </tr>
             </tbody>
@@ -98,7 +98,7 @@
             <tbody>
                 <tr class="border-2 border-black">
                     <td class="md:flex-none px-4 py-2 " > 
-                        <p>teconsectetur aeos itaque, soluta voluptate quod illo ipsam.lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe cupiditate maxime, eaque tenetur inventore quo fugit illo assumenda, amet adipisci laborum corporis, architecto nostrum minima reiciendis porro! Accusantium, id quae? lore </p>
+                        <p>Entrées</p>
                     </td>
                     <td class=" px-4 py-2 flex-none">
                         <img class=" inline w-full mr-4  flex-none" src="picture\carent.jpg ">
@@ -120,8 +120,8 @@
                     <td class="md:flex-none px-4 py-2 w-1/3" > 
                         <img class=" inline w-full mr-4  md:flex-none" src="picture\carplat.jpg ">
                     </td>
-                    <td class=" px-4 py-2 md:flex-none text-gray-800 w-2/3">
-                        <p>teconsectetur aeos itaque, soluta voluptate quod illo ipsam.lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe cupiditate maxime, eaque tenetur inventore quo fugit illo assumenda, amet adipisci laborum corporis, architecto nostrum minima reiciendis porro! Accusantium, id quae? lore </p>
+                    <td class=" px-4 py-2 md:flex-none text-gray-800 w-2/3 text-left">
+                        <p>Plats</p>
                     </td>
                 </tr>
             </tbody>
@@ -137,7 +137,7 @@
             <tbody>
                 <tr class="border-2 border-black">
                     <td class="md:flex-none px-4 py-2 " > 
-                        <p>teconsectetur aeos itaque, soluta voluptate quod illo ipsam.lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe cupiditate maxime, eaque tenetur inventore quo fugit illo assumenda, amet adipisci laborum corporis, architecto nostrum minima reiciendis porro! Accusantium, id quae? lore </p>
+                        <p>Desserts </p>
                     </td>
                     <td class=" px-4 py-2 flex-none">
                         <img class=" inline w-full mr-4  flex-none" src="picture\cardes.jpg ">
