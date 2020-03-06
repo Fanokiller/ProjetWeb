@@ -1,11 +1,12 @@
-</div>
-<!-- /row -->
-</div>
+    </div> <!-- fermeture de la div du header -->
+    <!-- </div>   mis en com      -->
 <!-- /container-fluid -->
 
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
+
+<!-- Fichier js  -->
 <script type="text/javascript" src="js/jquery-1.3.1.min.js"></script>	
 <script type="text/javascript" language="javascript" src="/../ProjetWeb/asset/js/hoverIntent.js"></script>
 <script type="text/javascript" language="javascript" src="/../ProjetWeb/asset/js/jquery.dropdown.js"></script>
