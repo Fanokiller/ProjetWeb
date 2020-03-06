@@ -88,17 +88,17 @@ $panier = new panier();
             </ul>
             
 
-            <!-- <div class="flex flex-1 md:w-1/3 justify-center md:justify-center text-black px-4 items-center">
-                <span class="relative w-full">
+            <div class="flex flex-1 md:w-1/3 justify-center md:justify-center text-black px-4 items-center">
+                <!-- <span class="relative w-full">
                     <input type="search" placeholder="Search" class="w-full bg-white text-sm text-black transition border border-transparent focus:outline-none focus:border-gray-700 rounded py-1 px-2 pl-10 appearance-none leading-normal">
                     <div class="absolute search-icon" style="top: .5rem; left: .8rem;">
                         <svg class="fill-current pointer-events-none text-black w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                             <path d="M12.9 14.32a8 8 0 1 1 1.41-1.41l5.35 5.33-1.42 1.42-5.33-5.34zM8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"></path>
                         </svg>
                     </div>
-                </span>
-            </div> -->
-				<ul class="list-reset flex justify-between flex-1 md:flex-none items-center mx-auto px-4">
+                </span> -->
+            </div>
+				<ul class="list-reset flex justify-between flex-1 md:flex-none items-center px-4">
                     <!-- <li class="flex-1 md:flex-none md:mr-3">
 					    <a class="inline-block text-white no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="/../ProjetWeb/inscription/inscription.php"><i class="fas fa-user-plus fa-fw mr-1"></i> Inscription</a>
 				    </li> -->
