@@ -37,6 +37,7 @@ $panier = new panier();
 
 <!-- Début du body (fin dans footer) -->
 <body class="bg-white font-sans leading-normal tracking-normal mt-12">
+    <!-- Début navbar -->
     <nav class="bg-teal-500 pt-1 md:pt-2 pb-1 px-1 mt-0 h-auto fixed w-full z-20 top-0 px-4">
         <div class="flex flex-shrink justify-center md:justify-start text-white">
             <ul class="list-reset flex justify-between flex-1 md:flex-none items-center">
@@ -142,17 +143,18 @@ $panier = new panier();
                             ?>
                             <i class="fa fa-caret-down fa-fw mr-1 pt-1 pl-3"></i>
                         </button>
-                            <div id="DropdownUser" class="dropdown-content text-white ml-4 show" >
-                                <a href="/../ProjetWeb/user/user.php">
-                                    <i class="fas fa-user fa-fw mr-1"></i>User
-                                </a>
-                                <a href="/../ProjetWeb/admin/adminIndex.php">
-                                    <i class="fas fa-user-shield fa-fw mr-1"></i>Admin
-                                </a>
-                            </div>
+                        <div id="DropdownUser" class="dropdown-content text-white ml-4 show" >
+                            <a href="/../ProjetWeb/user/user.php">
+                                <i class="fas fa-user fa-fw mr-1"></i>User
+                            </a>
+                            <a href="/../ProjetWeb/admin/adminIndex.php">
+                                <i class="fas fa-user-shield fa-fw mr-1"></i>Admin
+                            </a>
+                        </div>
                     </div>
                 </li>
             </ul>
         </div>
     </nav>
-<div class="flex flex-col md:flex-row">
+    <!-- fin navbar  -->
+    <div class="flex flex-col md:flex-row"> <!-- Div qui se ferme dans le footer, fait le body-->
