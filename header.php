@@ -41,6 +41,9 @@ $panier = new panier();
     <nav class="bg-teal-500 pt-1 md:pt-2 pb-1 px-1 mt-0 h-auto fixed w-full z-20 top-0 px-4">
         <div class="flex flex-shrink justify-center md:justify-start text-white">
             <ul class="list-reset flex justify-between flex-1 md:flex-none items-center">
+                <li>
+                    <img src="/../ProjetWeb/img/Logo.jpg" class="h-16 w-16 mr-2 rounded">
+                </li>
                 <li class="mr-3">
                     <a href="../accueil/accueil.php" class="inline-block py-1 md:py-3 pl-1 align-middle text-white no-underline hover:text-white border-b-2 border-teal-500 hover:border-white">
                         <i class="fas fa-home fa-fw mr-1"></i>
