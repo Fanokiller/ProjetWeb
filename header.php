@@ -1,8 +1,8 @@
 <?php
 session_start(); 
-require 'Fonction/db.class.php';
+require 'fonction/db.class.php';
 $DB = new DB();
-require 'Fonction/cart.class.php';
+require 'fonction/cart.class.php';
 $panier = new panier();
 
 ?>
@@ -105,56 +105,63 @@ $panier = new panier();
             
 
             <div class="flex flex-1 md:w-1/3 justify-center md:justify-center text-black px-4 items-center">
-                <span class="relative w-full">
+                <!-- <span class="relative w-full">
                     <input type="search" placeholder="Search" class="w-full bg-white text-sm text-black transition border border-transparent focus:outline-none focus:border-gray-700 rounded py-1 px-2 pl-10 appearance-none leading-normal">
                     <div class="absolute search-icon" style="top: .5rem; left: .8rem;">
                         <svg class="fill-current pointer-events-none text-black w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
                             <path d="M12.9 14.32a8 8 0 1 1 1.41-1.41l5.35 5.33-1.42 1.42-5.33-5.34zM8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"></path>
                         </svg>
                     </div>
-                </span>
+                </span> -->
             </div>
-			<ul class="list-reset flex justify-between flex-1 md:flex-none items-center px-4 mx-auto">
-                <li class="flex-1 md:flex-none md:mr-3">
-					<a class="inline-block text-white no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="/../ProjetWeb/inscription/inscription.php">
-                        <i class="fas fa-user-plus fa-fw mr-1"></i> Inscription
-                    </a>
-				</li>
-                <?php
-                    if (isset($_SESSION['nickname'])):
+				<ul class="list-reset flex justify-between flex-1 md:flex-none items-center px-4">
+                    <!-- <li class="flex-1 md:flex-none md:mr-3">
+					    <a class="inline-block text-white no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="/../ProjetWeb/inscription/inscription.php"><i class="fas fa-user-plus fa-fw mr-1"></i> Inscription</a>
+				    </li> -->
+                        <?php
+                            if (isset($_SESSION['nickname'])):
 
-                ?>
-                <li class="flex-1 md:flex-none md:mr-3">
-                    <a class="inline-block text-white no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="/../ProjetWeb/deconnexion/deconnexion.php">Deconnexion</a>
-                </li>
-                <?php else :  ?>
-                <li class="flex-1 md:flex-none md:mr-3">
-                    <a class="inline-block text-white no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="/../ProjetWeb/connexion/connexion.php">Connexion</a>     
-                </li>
-                <?php endif ?>
-				<li class="flex-1 md:flex-none md:mr-3">
-					<div class="relative inline-block text-white">
-                        <button class="dropbtnUser" id="btnUser">                            
-                            <?php
-                                if (isset($_SESSION['nickname'])) // Si le membre est connecté
-                                {
-                                    echo 'Bonjour  '.$_SESSION['nickname'];
-                                }
-                            ?>
-                            <i class="fa fa-caret-down fa-fw mr-1 pt-1 pl-3"></i>
-                        </button>
-                        <div id="DropdownUser" class="dropdown-content text-white ml-4 show" >
-                            <a href="/../ProjetWeb/user/user.php">
-                                <i class="fas fa-user fa-fw mr-1"></i>User
-                            </a>
-                            <a href="/../ProjetWeb/admin/adminIndex.php">
-                                <i class="fas fa-user-shield fa-fw mr-1"></i>Admin
-                            </a>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
+                        ?>
+                            <li class="flex-1 md:flex-none md:mr-3">
+                                <a class="inline-block text-white no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="/../ProjetWeb/deconnexion/deconnexion.php">
+                                    Deconnexion
+                                </a>
+                            </li>
+                            <li class="flex-1 md:flex-none md:mr-3">
+					            <a class="inline-block text-white no-underline hover:text-gray-200 hover:text-underline py-2 px-4 hidden" href="/../ProjetWeb/inscription/inscription.php"><i class="fas fa-user-plus fa-fw mr-1"></i> Inscription</a>
+				            </li>
+                        <?php else :  ?>
+                            <li class="flex-1 md:flex-none md:mr-3">
+                                <a class="inline-block text-white no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="/../ProjetWeb/connexion/connexion.php">
+                                    Connexion
+                                </a>
+                            </li>
+                            <li class="flex-1 md:flex-none md:mr-3">
+					            <a class="inline-block text-white no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="/../ProjetWeb/inscription/inscription.php"><i class="fas fa-user-plus fa-fw mr-1"></i> Inscription</a>
+				            </li>
+                        <?php endif ?>
+
+				    <li class="flex-1 md:flex-none md:mr-3">
+						<div class="relative inline-block text-white">
+                            <button class="dropbtnUser" id="btnUser">                            
+                                <?php
+                                    if (isset($_SESSION['nickname'])) // Si le membre est connecté
+                                    {
+                                        echo 'Bonjour  '.$_SESSION['nickname'];                                    
+                                        $id_user = $_SESSION['nickname'];
+                                    }
+
+                                ?>
+                                <i class="fa fa-caret-down fa-fw mr-1 pt-1 pl-3"></i>
+                            </button>
+                            <div id="DropdownUser" class="dropdown-content text-white ml-4 show" >
+                                <a href="/../ProjetWeb/user/user.php?id_user=<?= $id_user?>"><i class="fas fa-user fa-fw mr-1"></i>User</a>
+                                <a href="/../ProjetWeb/admin/adminIndex.php"><i class="fas fa-user-shield fa-fw mr-1"></i>Admin</a>
+                                </div>
+                            </div>
+                    </li>
+                </ul>
+            </div>
     </nav>
     <!-- fin navbar  -->
     <div class="flex flex-col md:flex-row"> <!-- Div qui se ferme dans le footer, fait le body-->

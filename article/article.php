@@ -1,6 +1,7 @@
 <?php include __DIR__ . '/../header.php' ?>
     <!-- Header -->
-    <?php $articles = $DB->query('SELECT * FROM recipe')?>
+    <?php $id_article = $_GET['id_article'];?>
+    <?php $articles = $DB->query("SELECT * FROM recipe WHERE id = '$id_article'")?>
     <?php foreach ($articles as $article): ?>
     <div class="main-content flex-1 bg-white mt-12 md:mt-2 pb-24 md:pb-5">
         <div class="flex flex-wrap mt-6">
@@ -28,12 +29,18 @@
                                 <br>Bon marché
                             </span>
                             <span class="inline-block mx-auto text-lg">
-                                <i class="fas fa-user-alt h-10 w-10 fa-2x" style="color:gray"></i>
-                                <br><?= $article->persons; ?>
-                            </span>
-                        </div>
-                        <img class="w-full" src="data:image/jpg;base64,<?= $article->user_image ?>">
-                        <!-- </span> -->
+                            <i class="fas fa-user-alt h-10 w-10 fa-2x" style="color:gray"></i><br><?= $article->persons; ?></span>
+                    </div>
+                    <img class="w-full" src="data:image/jpg;base64,<?= $article->user_image ?>"></span>
+                    </div>
+                <div class="w-full p-3 border border-grey-300 rounded shadow p-2">
+                    <div class="mx-auto self-start pb-5"><i class="far fa-heart fa-5x"></i></div>
+                    <div class="flex justify-between">
+                        <form method="post" action="/../ProjetWeb/pdf.php?id_article=<?=$id_article?>" enctype="multipart/form-data">
+                        <button value="pdf"><span class="mx-auto"><i class="far fa-file-pdf fa-2x"></i></span></button></form>
+                        <form method="post" action="/../ProjetWeb/mail.php" enctype="multipart/form-data"><button value="mail"><span class="mx-auto"><i class="far fa-share-square fa-2x"></i></span></button></form>
+                        <button value="print" onclick="window.print()"><span class="mx-auto"><i class="fas fa-print fa-2x"></i></span></button>
+                        <button><span class="mx-auto"><i class="far fa-star fa-2x"></i></span></button>
                     </div>
                     <div class="w-full p-3 border border-grey-300 rounded shadow p-2">
                         <div class="mx-auto self-start pb-5">

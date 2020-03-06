@@ -17,6 +17,7 @@
 
                         <label for="user_image">Image :</label>
                         <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="user_image" name="user_image" type="file">
+                        
                         <div class="inline-block p-2">
                         <label for="duree">Durée en minute :</label>
                         <input class="appearance-none inline-block w-32 bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="duree" name="duree" type="text">
