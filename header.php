@@ -8,39 +8,50 @@ $panier = new panier();
 ?>
 <!doctype html>
 <html lang="fr">
+
+<!-- Début du Head -->
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+
+                    <!-- Utilisation de fontawesome -->
     <script src="https://kit.fontawesome.com/41d2d2bd90.js" crossorigin="anonymous"></script>
 
     <title>ProjetWeb</title>
 
-    <!-- Bootstrap & Tailwind core CSS -->
+                    <!-- Utilisation de Tailwind -->
     <link href="https://unpkg.com/tailwindcss@%5E1.0/dist/tailwind.min.css" rel="stylesheet">
-    <!-- Custom styles for this template -->
+
+            <!-- Lien des fichiers css -->
+    <link href="/../skeleton/asset/dashboard.css" rel="stylesheet">
     <link href="/../ProjetWeb/article/Article.css" rel="stylesheet">
     <link href="/../ProjetWeb/asset/css/style.css" rel="stylesheet">
     <link href="/../ProjetWeb/asset/css/carousselcss.css" rel="stylesheet">
     <link href="/../ProjetWeb/asset/css/tablecss.css" rel="stylesheet">
 
 </head>
+<!-- Fin du head -->
 
+
+<!-- Début du body (fin dans footer) -->
 <body class="bg-white font-sans leading-normal tracking-normal mt-12">
+    <!-- Début navbar -->
     <nav class="bg-teal-500 pt-1 md:pt-2 pb-1 px-1 mt-0 h-auto fixed w-full z-20 top-0 px-4">
         <div class="flex flex-shrink justify-center md:justify-start text-white">
             <ul class="list-reset flex justify-between flex-1 md:flex-none items-center">
                 <li class="mr-3">
                     <a href="../accueil/accueil.php" class="inline-block py-1 md:py-3 pl-1 align-middle text-white no-underline hover:text-white border-b-2 border-teal-500 hover:border-white">
-                        <i class="fas fa-home fa-fw mr-1"></i><span class="pb-1 md:pb-0 text-xs md:text-base text-white md:text-white inline-block md:inline-block ml-2">Accueil</span>
+                        <i class="fas fa-home fa-fw mr-1"></i>
+                        <span class="pb-1 md:pb-0 text-xs md:text-base text-white md:text-white inline-block md:inline-block ml-2">Accueil</span>
                     </a>
                 </li>
                 <li class="mr-3">
                     <a href="../index/index.php" class="block py-1 md:py-3 pl-1 align-middle text-white no-underline hover:text-white border-b-2 border-teal-500 hover:border-pink-500">
-                        <i class="fas fa-bars fa-fw mr-1"></i><span class="pb-1 md:pb-0 text-xs md:text-base text-white md:text-white block md:inline-block ml-2">Recettes</span>
+                        <i class="fas fa-gamepad fa-fw mr-1"></i>
+                        <span class="pb-1 md:pb-0 text-xs md:text-base text-white md:text-white block md:inline-block ml-2">Recettes</span>
                     </a>
-                </li>
                     <li class="mr-3 dropdown">
                         <button class="dropbtnSaison" id="btnSaison">
                             <i class="fas fa-search fa-fw mr-1"></i>Saison 
@@ -53,20 +64,22 @@ $panier = new panier();
                             <a href="#"><i class="fas fa-snowflake fa-fw mr-1"></i>Hiver</a>
                         </div>
                     </li>
-                
+                </li>
                 <li class="mr-3">
                     <?php
                 if (isset($_SESSION['nickname'])):
 
                     ?>
                     <a href="/../ProjetWeb/cart/cartIndex.php" class="block py-1 md:py-3 pl-1 align-middle text-white no-underline hover:text-white border-b-2 border-teal-500 hover:border-green-300">
-                    <i class="fas fa-shopping-cart fa-fw mr-1"></i><span class="pb-1 md:pb-0 text-xs md:text-base text-white md:text-white block md:inline-block ml-2">Cart</span>
+                        <i class="fas fa-shopping-cart fa-fw mr-1"></i>
+                        <span class="pb-1 md:pb-0 text-xs md:text-base text-white md:text-white block md:inline-block ml-2">Cart</span>
                     </a>
                 </li>
                 <?php else :  ?>
-                    <li class="mr-3">
+                <li class="mr-3">
                     <a href="/../ProjetWeb/cart/cart.php" class="block py-1 px-3 md:py-3 pl-1 text-white align-middle text-white cursor-not-allowed hidden">
-                    <i class="fas fa-shopping-cart fa-fw mr-1"></i><span class="pb-1 md:pb-0 text-xs md:text-base text-white md:text-white block md:inline-block ml-2">Cart</span>
+                        <i class="fas fa-shopping-cart fa-fw mr-1"></i>
+                        <span class="pb-1 md:pb-0 text-xs md:text-base text-white md:text-white block md:inline-block ml-2">Cart</span>
                     </a>
                 </li>
                 <?php endif ?>
@@ -76,12 +89,15 @@ $panier = new panier();
 
                     ?>
                     <a href="/../ProjetWeb/ajoutRecette/ajtRecette.php" class="block py-1 md:py-3 pl-0 md:pl-1 align-middle text-white no-underline hover:text-white border-b-2 border-teal-500 hover:border-red-500">
-                        <i class="far fa-plus-square fa-fw mr-1"></i><span class="pb-1 md:pb-0 text-xs md:text-base text-white md:text-white block md:inline-block ml-2">Nouvelle recette</span>
+                        <i class="far fa-plus-square fa-fw mr-1"></i>
+                        <span class="pb-1 md:pb-0 text-xs md:text-base text-white md:text-white block md:inline-block ml-2">Nouvelle recette</span>
                     </a>
                 </li>
                 <?php else :  ?>
+                <li> <!-- ajout li -->
                     <a href="/../ProjetWeb/ajoutRecette/ajtRecette.php" class="block py-1 md:py-3 pl-0 md:pl-1 align-middle text-white hidden">
-                        <i class="far fa-plus-square fa-fw mr-1"></i><span class="pb-1 md:pb-0 text-xs md:text-base text-white md:text-white block md:inline-block ml-2">Nouvelle recette</span>
+                        <i class="far fa-plus-square fa-fw mr-1"></i>
+                        <span class="pb-1 md:pb-0 text-xs md:text-base text-white md:text-white block md:inline-block ml-2">Nouvelle recette</span>
                     </a>
                 </li>
                 <?php endif ?>
@@ -147,4 +163,5 @@ $panier = new panier();
                 </ul>
             </div>
     </nav>
-    <div class="flex flex-col md:flex-row">
+    <!-- fin navbar  -->
+    <div class="flex flex-col md:flex-row"> <!-- Div qui se ferme dans le footer, fait le body-->

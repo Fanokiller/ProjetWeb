@@ -33,34 +33,31 @@
                 <li class="carousel-bullet"></li>
             </ul>
             <ul class="carousel-container">
-                <?php foreach ($articles as $ligne) {?>
-                    <li class="carousel-item ">
-                        <div class="">
-                            <img src="data:image/jpg;base64,<?php echo ($ligne['user_image']) ?>" height="150 px" width="100%" >
-                        
-                        </div>
-                    </li>
-                <?php } ?>
-                <!-- <li class="carousel-item">
+                <li class="carousel-item ">
+                    <div class="">
+                        <img src="/../Projetweb/img/apéro-dinatoire-1-859x550.jpg" class="w-full" >
+                    </div>
+                </li>
+                <li class="carousel-item">
                     <div>
-                        <img src="picture\carent.jpg" class="w-full ">
+                        <img src="/../Projetweb/img/i65954-entrees-chaudes-pas-cheres.jpg" class="w-full ">
                     </div>
                 </li>
                 <li class="carousel-item ">
                     <div class="h-8">
-                        <img src="picture\carplat.jpg" class="w-full ">
+                        <img src="/../Projetweb/img/choucroute-alsacienne.jpg" class="w-full ">
                     </div>
                 </li>
                 <li class="carousel-item">
                     <div>
-                        <img src="picture\cardes.jpg" class="w-full ">
+                        <img src="/../Projetweb/img/Muffins-facile-au-Nutella-avec-thermomix.jpg" class="w-full ">
                     </div>
                 </li>
                 <li class="carousel-item">
                     <div>
-                        <img src="picture\carap.jpg" class="w-full ">
+                        <img src="/../Projetweb/img/fruit.jpg" class="w-full ">
                     </div>
-                </li> -->
+                </li>
             </ul>
         </div>
     </div>
@@ -82,7 +79,7 @@
             <tbody>
                 <tr class="border-2 border-black">
                     <td class="md:flex-none px-4 py-2 w-1/3" > 
-                        <img class=" inline w-full mr-4  md:flex-none" src="picture\carap.jpg ">
+                        <img class=" inline w-full mr-4  md:flex-none" src="/../Projetweb/img/saucisse-feuillete-apero.jpeg ">
                     </td>
                     <td class=" px-4 py-2 md:flex-none text-gray-800 w-2/3">
                         <p>teconsectetur aeos itaque, soluta voluptate quod illo ipsam.lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe cupiditate maxime, eaque tenetur inventore quo fugit illo assumenda, amet adipisci laborum corporis, architecto nostrum minima reiciendis porro! Accusantium, id quae? lore </p>
@@ -156,7 +153,7 @@
         <table class="bg-white  border-2 border-gray-300  ">       
             <tbody>
                 <tr>
-                    <img class="border-4 border-gray-300" src="picture\carap.jpg ">
+                    <img class="border-4 border-gray-300" src="/../Projetweb/img/saucisse-feuillete-apero.jpeg ">
                     <td class=" flex-none text-center text-gray-300">
                         <p>teconsectetur aeos itaque, soluta voluptate quod illo ipsam.lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe cupiditate maxime, eaque tenetur inventore quo fugit illo assumenda, amet adipisci laborum corporis, architecto nostrum minima reiciendis porro! Accusantium, id quae? lore </p>
                     </td>
