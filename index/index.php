@@ -10,9 +10,9 @@
 
                 <!-- Images avec un lien de recette -->
 
-
+        <?php $id_article = $article->id; ?>
         <div class="mx-auto bg-teal-500 rounded-lg p-2 m-2 w-4/6">
-            <a href="/../ProjetWeb/article/article.php">
+            <a href="/../ProjetWeb/article/article.php?id_article=<?= $id_article?>">
                 <img id="taille-img-index" class="rounded-lg transform scale-100 hover:scale-110 transition duration-150" src="data:image/jpg;base64,<?= $article->user_image?>">
             </a>
         </div>
@@ -43,9 +43,9 @@
 
                         <!-- Images avec un lien de recette -->
             
-                                
+                    <?php $id_article = $article->id; ?>
                     <div class="mx-auto bg-teal-500 rounded-lg p-2 m-2 w-4/6">
-                        <a href="/../ProjetWeb/article/article.php">
+                        <a href="/../ProjetWeb/article/article.php?id_article=<?= $id_article?>">
                             <img id="taille-img-index" class="rounded-lg transform scale-100 hover:scale-110 transition duration-150" src="data:image/jpg;base64,<?= $article->user_image?>">
                         </a>
                     </div>
@@ -76,9 +76,9 @@
 
                         <!-- Images avec un lien de recette -->
             
-                                
+                    <?php $id_article = $article->id; ?>           
                     <div class="mx-auto bg-teal-500 rounded-lg p-2 m-2 w-4/6">
-                        <a href="/../ProjetWeb/article/article.php">
+                        <a href="/../ProjetWeb/article/article.php?id_article=<?= $id_article?>">
                             <img id="taille-img-index" class="rounded-lg transform scale-100 hover:scale-110 transition duration-150" src="data:image/jpg;base64,<?= $article->user_image?>">
                         </a>
                     </div>
@@ -109,9 +109,9 @@
 
                         <!-- Images avec un lien de recette -->
             
-                                
+                    <?php $id_article = $article->id; ?>                
                     <div class="mx-auto bg-teal-500 rounded-lg p-2 m-2 w-4/6">
-                        <a href="/../ProjetWeb/article/article.php">
+                        <a href="/../ProjetWeb/article/article.php?id_article=<?= $id_article?>">
                             <img id="taille-img-index" class="rounded-lg transform scale-100 hover:scale-110 transition duration-150" src="data:image/jpg;base64,<?= $article->user_image?>">
                         </a>
                     </div>
