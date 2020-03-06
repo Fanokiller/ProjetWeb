@@ -1,6 +1,7 @@
 <?php include __DIR__ . '/../header.php' ?>
 <div class="main-content flex-1 bg-gray-100 mt-12 md:mt-2 pb-24 md:pb-5">
-<?php $users = $DB->query('SELECT * FROM user')?>
+    <?php $id_user = $_GET['id_user'];?>
+<?php $users = $DB->query("SELECT * FROM user WHERE nickname ='$id_user'")?>
 <?php foreach ($users as $user): ?>
     <div class="mx-auto bg-gray-400 rounded-lg mt-12 mb-12">
         <div class="flex w-full items-center">
