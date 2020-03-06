@@ -12,19 +12,25 @@ $pdf->SetAutoPageBreak(false);
 //Ajout de la premiere page
 $pdf->AddPage();
 
- //Affichage du titre (ce qui va pas bouger d'un pdf à l'autre)
-// $pdf->SetFillColor(232,232,232);
-// $pdf->SetFont('Arial','B',12);
-// $pdf->SetY(8);
-// $pdf->SetX(90);
-// $pdf->Cell(40,8,'Premiere recette',1,0,'C',1);
-
+//Connexion à la base
+$bdd = new PDO('mysql:host=localhost;port=3308;dbname=recipedb;charset=utf8', 'root', '');
+$id_article=$_GET['id_article'];
+$sql = "SELECT title, content, duree, persons, etapes, user_image FROM recipe WHERE id = '$id_article'";
+$stmt = $bdd->query($sql);
+$row =  $stmt->fetch(PDO::FETCH_ASSOC);
+// Définition des variables à insérer dans les champs
+$title = $row['title'];
+$content = $row['content'];
+$duree = $row['duree'];
+$persons = $row['persons'];
+$user_image = $row['user_image'];
+file_put_contents('user_image',$user_image);
 
 $pdf->SetFillColor(232,232,232);
 $pdf->SetFont('Arial','B',12);
 $pdf->SetY(45);
 $pdf->SetX(10);
-$pdf->Cell(40,8,'Temps',1,0,'C',1);
+$pdf->Cell(40,8,'duree:'.' '.$duree,1,0,'C',1);
 
 $pdf->SetFillColor(232,232,232);
 $pdf->SetFont('Arial','B',12);
@@ -36,7 +42,7 @@ $pdf->SetFillColor(232,232,232);
 $pdf->SetFont('Arial','B',12);
 $pdf->SetY(45);
 $pdf->SetX(110);
-$pdf->Cell(40,8,'Personnes',1,0,'C',1);
+$pdf->Cell(40,8,'Personnes:'.' '.$persons,1,0,'C',1);
 
 
 $pdf->SetFillColor(232,232,232);
@@ -57,37 +63,6 @@ $pdf->SetFont('Arial','B',12);
 $pdf->SetY(165);
 $pdf->SetX(135);
 $pdf->Cell(40,8,'Etapes',1,0,'C',1);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//Connexion à la base
-$bdd = new PDO('mysql:host=localhost;port=3306;dbname=recipedb;charset=utf8', 'root', '');
-$sql = 'SELECT title, content, duree, persons,user_image FROM recipe';
-$stmt = $bdd->query($sql);
-$row =  $stmt->fetch(PDO::FETCH_ASSOC);
-// Définition des variables à insérer dans les champs
-$title = $row['title'];
-$content = $row['content'];
-$duree = $row['duree'];
-$persons = $row['persons'];
-$user_image = $row['user_image'];
-file_put_contents('user_image',$user_image);
-
-
 // insertion de Titre à utiliser pour add les autres champs de la bdd
 $pdf->SetFillColor(232,232,232);
 $pdf->SetFont('Arial','B',12);
