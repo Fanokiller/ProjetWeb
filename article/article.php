@@ -65,35 +65,7 @@
                                             <i class="far fa-star fa-2x"></i>
                                         </span>
                                     </button>
-                                </div>
-                                    <div class="w-full p-3 border border-grey-300 rounded shadow p-2">
-                                        <div class="mx-auto self-start pb-5">
-                                            <i class="far fa-heart fa-5x"></i>
-                                        </div>
-                                        <div class="flex justify-between">
-                                            <button>
-                                                <span class="mx-auto">
-                                                    <i class="far fa-file-pdf fa-2x"></i>
-                                                </span>
-                                            </button>
-                                            <form method="Post" action="/../ProjetWeb/mail.php" enctype="multipart/form-data">
-                                                <button value="mail">
-                                                    <span class="mx-auto">
-                                                        <i class="far fa-share-square fa-2x"></i>
-                                                    </span>
-                                                </button>
-                                            </form>
-                                            <button value="print" onclick="window.print()">
-                                                <span class="mx-auto">
-                                                    <i class="fas fa-print fa-2x"></i>
-                                                </span>
-                                            </button>
-                                            <button>
-                                                <span class="mx-auto">
-                                                    <i class="far fa-star fa-2x"></i>
-                                                </span>
-                                            </button>
-                                        </div>
+                                    </div>
                                         <div class="border-2 border-gray-400 mt-4"></div>
                                         <div class="flex flew-row bg-white rounded-lg">
                                             <div class="flex-shrink-0 bg-gray-600 rounded-lg h-full">
@@ -155,6 +127,6 @@
                                     </div>
                                 </div>
                             </div>
-    
+    </div>
 <?php endforeach ?>
 <?php include __DIR__ . '/../footer.php' ?>
