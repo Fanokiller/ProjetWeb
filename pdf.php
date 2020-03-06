@@ -89,11 +89,45 @@ file_put_contents('user_image',$user_image);
 
 
 // insertion de Titre à utiliser pour add les autres champs de la bdd
+
+// titre 
 $pdf->SetFillColor(232,232,232);
 $pdf->SetFont('Arial','B',12);
 $pdf->SetY(15);
 $pdf->SetX(80);
 $pdf->Cell(50,6,'titre :'.' '.$title,1,0,'L',1);
+
+// temps
+
+$pdf->SetFillColor(232,232,232);
+$pdf->SetFont('Arial','B',12);
+$pdf->SetY(60);
+$pdf->SetX(10);
+$pdf->Cell(40,8, $duree,1,0,'C',1);
+
+
+// Difficulte
+$pdf->SetFillColor(232,232,232);
+$pdf->SetFont('Arial','B',12);
+$pdf->SetY(60);
+$pdf->SetX(10);
+$pdf->Cell(40,8, $duree,1,0,'C',1);
+
+
+// nb Personnes
+$pdf->SetFillColor(232,232,232);
+$pdf->SetFont('Arial','B',12);
+$pdf->SetY(60);
+$pdf->SetX(110);
+$pdf->Cell(40,8, $persons,1,0,'C',1);
+
+// Prix
+ 
+$pdf->SetFillColor(232,232,232);
+$pdf->SetFont('Arial','B',12);
+$pdf->SetY(60);
+$pdf->SetX(110);
+$pdf->Cell(40,8, $persons,1,0,'C',1);
 
 // $pdf->SetFillColor(232,232,232);
 // $pdf->SetFont('Arial','B',12);
