@@ -5,7 +5,7 @@
 <!-- Lecture de la bdd -->
 
 <?php 
-    $bdd = new PDO('mysql:host=localhost;port=3306;dbname=recipedb;charset=utf8', 'root', '');
+    $bdd = new PDO('mysql:host=localhost;port=3308;dbname=recipedb;charset=utf8', 'root', '');
     $req = $bdd->query("SELECT user_image FROM recipe");
     $articles = $req->fetchAll();
     ?>
