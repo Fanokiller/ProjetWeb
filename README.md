@@ -10,8 +10,6 @@
 
 * Jean-Baptiste BRAUSEM 
 
-* Willem DAOUD
-
 
 **Fonctionnalité:**
 -
